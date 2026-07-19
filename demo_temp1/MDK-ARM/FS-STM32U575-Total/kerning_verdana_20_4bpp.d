@@ -1,0 +1,11 @@
+fs-stm32u575-total/kerning_verdana_20_4bpp.o: \
+  ..\touchgfx\generated\fonts\src\kerning_verdana_20_4bpp.cpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\Font.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\Unicode.hpp \
+  C:\keil5\Core\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\hal\Types.hpp \
+  C:\keil5\Core\ARM\ARMCLANG\Bin\..\include\assert.h \
+  C:\keil5\Core\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\keil5\Core\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\keil5\Core\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\hal\Config.hpp

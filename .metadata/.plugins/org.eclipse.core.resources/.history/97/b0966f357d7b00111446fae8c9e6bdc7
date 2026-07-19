@@ -1,0 +1,111 @@
+2026-07-09 17:41:37,912 [INFO] (check_requirements.py #28, load_requirements): 📥 Downloading requirements from https://Tool-support.renesas.com/tool-support/Zoo/MCT/requirements.txt
+2026-07-09 17:41:37,923 [DEBUG] (connectionpool.py #1062, _new_conn): Starting new HTTPS connection (1): tool-support.renesas.com:443
+2026-07-09 17:41:37,933 [ERROR] (check_requirements.py #33, load_requirements): ❌ Failed to download requirements: ('Connection aborted.', ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None))
+2026-07-09 17:41:37,933 [INFO] (check_requirements.py #34, load_requirements): Please check the internet connection. If that does not help, please contact Renesas technical support.
+[INFO] Success to execute the command
+Exit code: 1
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py comm get_model_info --framework onnx --input_model D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4.onnx --output_shape_dict_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_input_shape.json --output_model_info_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_model_info.json --accelerator_type ethos-u55 ]
+2026-07-09 17:41:47,981 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-09 17:41:49,369 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-09 17:41:49,374 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-09 17:41:49,375 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-09 17:41:49,375 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-09 17:41:49,506 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-09 17:41:49,510 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-09 17:41:52,058 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-09 17:41:52,061 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-09 17:41:52,063 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-09 17:41:52,066 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-09 17:41:52,069 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-09 17:41:52,071 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-09 17:41:52,130 [INFO] (get_model_info.py #523, main): [Parsing input model node start...]
+2026-07-09 17:41:52,130 [INFO] (get_model_info.py #422, make_shape_dict_from_model): Make shape_dict from model.
+2026-07-09 17:41:52,393 [INFO] (get_model_info.py #316, get_onnx_shape_dict): shape_dict: {'input': [1, 3, 128, 128]}
+2026-07-09 17:41:52,393 [INFO] (get_model_info.py #326, get_onnx_shape_dict): Validated shape_dict: {'input': [1, 3, 128, 128]}
+2026-07-09 17:41:52,395 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-09 17:41:52,396 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-09 17:41:52,397 [INFO] (get_model_info.py #537, main): [Parsing input model node finished]
+Variable container does not have anything...
+[INFO] Success to execute the command
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py ruhmi quantize --framework onnx --input_model D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4.onnx --output_dir D:/e2_workplace/RA8P1_TEST11/conversion_results/quantized --quant_config_json D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_quant_config.json --shape_dict_json D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_input_shape.json ]
+2026-07-09 17:41:58,864 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-09 17:41:59,082 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-09 17:41:59,085 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-09 17:41:59,087 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-09 17:41:59,087 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-09 17:41:59,106 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-09 17:41:59,109 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-09 17:41:59,534 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-09 17:41:59,534 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-09 17:41:59,536 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-09 17:41:59,537 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-09 17:41:59,537 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-09 17:41:59,538 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-09 17:41:59,558 [INFO] (quantize_model.py #463, main): Arguments: Namespace(framework='onnx', input_model='D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4.onnx', output_dir='D:/e2_workplace/RA8P1_TEST11/conversion_results/quantized', quant_config_json='D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_quant_config.json', shape_dict_json='D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_input_shape.json')
+Variable container does not have anything...
+2026-07-09 17:41:59,558 [INFO] (quantize_model.py #483, main): Using Device Platform: ALT2
+2026-07-09 17:41:59,558 [INFO] (quantize_model.py #387, quantize): Running MERA quantization ...
+2026-07-09 17:41:59,597 [INFO] (utils.py #49, get_onnx_symbolic_shape_mapping): Check input name: input ...
+2026-07-09 17:41:59,598 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in model
+2026-07-09 17:41:59,600 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_onnx_cli --io_desc_input D:\e2_workplace\RA8P1_TEST11\yolo-fastest-digit4.onnx --io_desc_result C:\Users\kout\AppData\Local\Temp\tmp1uhncgm6\tempfile'
+2026-07-09 17:42:00,138 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'input_desc.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\model
+2026-07-09 17:42:00,138 [DEBUG] (deploy_project.py #248, popd): (popd) cwd is now D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized
+2026-07-09 17:42:00,139 [INFO] (quantize_model.py #87, generate_random_data): Generate sample images with npy extension to temp_dir='C:\\Users\\kout\\AppData\\Local\\Temp\\tmpphnjnznc'...
+2026-07-09 17:42:00,147 [INFO] (quantize_model.py #154, glob_calibration_data_file): Calibration data size: 5
+2026-07-09 17:42:00,147 [INFO] (quantize_model.py #164, glob_calibration_data_file): Updated: {'skip_preprocess': 'False', 'num_calibrate_samples': 5, 'calibrate_method': 'MinMax', 'percentile_value': 99.999, 'quant_options': '', 'drp_compiler_version': '100', 'cpu_data_type': 'float16', 'nodes': [{'name': 'input', 'calibrate_sample_dir': 'C:\\Users\\kout\\AppData\\Local\\Temp\\tmpphnjnznc', 'mean': [0.0, 0.0, 0.0], 'std': [1.0, 1.0, 1.0], 'file_list': array([WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand4.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand1.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand3.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand0.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand2.npy')],
+      dtype=object)}], 'node': [{'name': 'input', 'calibrate_sample_dir': 'C:\\Users\\kout\\AppData\\Local\\Temp\\tmpphnjnznc', 'mean': [0.0, 0.0, 0.0], 'std': [1.0, 1.0, 1.0], 'file_list': array([WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand4.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand1.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand3.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand0.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmpphnjnznc/rand2.npy')],
+      dtype=object)}]}
+2026-07-09 17:42:00,147 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand4.npy...
+2026-07-09 17:42:00,147 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand4.npy
+2026-07-09 17:42:00,147 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand1.npy...
+2026-07-09 17:42:00,147 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand1.npy
+2026-07-09 17:42:00,147 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand3.npy...
+2026-07-09 17:42:00,147 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand3.npy
+2026-07-09 17:42:00,148 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand0.npy...
+2026-07-09 17:42:00,148 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand0.npy
+2026-07-09 17:42:00,148 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand2.npy...
+2026-07-09 17:42:00,148 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmpphnjnznc\rand2.npy
+2026-07-09 17:42:00,148 [INFO] (deploy.py #309, deploy):  *** mera v2.6.0+pkg.4513 ***
+2026-07-09 17:42:00,148 [INFO] (deploy.py #310, deploy): Starting deployment of model 'yolo-fastest-digit4'...
+2026-07-09 17:42:00,148 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in build
+2026-07-09 17:42:00,149 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in MERAInterpreter
+2026-07-09 17:42:00,151 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'deploy_cfg.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter
+2026-07-09 17:42:00,151 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_onnx_cli D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter\deploy_cfg.json'
+[2026-07-09 17:42:00.183] [info] Loading and converting ONNX model ... 
+Traceback (most recent call last):
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\mera_quantizer.py", line 193, in __init__
+    self.fp32_mir_file = self.prj.get_artifact(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy_project.py", line 227, in get_artifact
+    raise FileNotFoundError(
+FileNotFoundError: Could not find artifact quantizer:model.mir in the project
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\cli.py", line 104, in <module>
+    dispatch(sys.argv[1:])
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\cli.py", line 100, in dispatch
+    handler(args.args)
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\commands\ruhmi\quantize_model.py", line 484, in main
+    mera_path = quantize(
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\commands\ruhmi\quantize_model.py", line 408, in quantize
+    qtzer = mera.Quantizer(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\mera_quantizer.py", line 199, in __init__
+    self.fp32_mir_file = self.deployer.deploy(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy.py", line 349, in deploy
+    self._apply_frontend(model, deploy_cfg_json)
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy.py", line 244, in _apply_frontend
+    cmd(f"{find_tool('fe_onnx_cli')} {deploy_cfg_json}")
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\utils.py", line 35, in cmd
+    raise subprocess.CalledProcessError(p.returncode, command)
+subprocess.CalledProcessError: Command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_onnx_cli D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter\deploy_cfg.json' returned non-zero exit status 3221226505.
+[ERROR] Failed to execute the command
+Failed to perform quantization.

@@ -1,0 +1,31 @@
+14:45:25 **** 项目VAI0配置Debug的增量构建 ****
+make -r --output-sync -j24 all 
+Building file: ../src/camera_layer/camera_layer.c
+In file included from ../src/camera_layer/camera_layer.c:11:
+In file included from D:\e2_workplace\VAI0\ra_gen\hal_data.h:6:
+In file included from D:\e2_workplace\VAI0\ra_gen\common_data.h:8:
+In file included from D:\e2_workplace\VAI0\ra\arm\CMSIS-DSP\Include\arm_math.h:35:
+D:\e2_workplace\VAI0\ra\arm\CMSIS-DSP\Include\dsp/utils.h:176:30: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+  176 |     n1 = __CLZ((uint32_t)hi) - 32;
+      |        ~ ~~~~~~~~~~~~~~~~~~~~^~~~
+D:\e2_workplace\VAI0\ra\arm\CMSIS-DSP\Include\dsp/utils.h:182:14: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+  182 |         n1 = __CLZ((uint32_t)lo);
+      |            ~ ^~~~~~~~~~~~~~~~~~~
+D:\e2_workplace\VAI0\ra\arm\CMSIS_6\CMSIS\Core\Include\cmsis_clang.h:254:25: note: expanded from macro '__CLZ'
+  254 | #define __CLZ(value)    __clz(value)
+      |                         ^~~~~~~~~~~~
+../src/camera_layer/camera_layer.c:569:6: warning: unused function 'ov5640_stream_on' [-Wunused-function]
+  569 | void ov5640_stream_on(void)
+      |      ^~~~~~~~~~~~~~~~
+../src/camera_layer/camera_layer.c:574:6: warning: unused function 'ov5640_stream_off' [-Wunused-function]
+  574 | void ov5640_stream_off(void)
+      |      ^~~~~~~~~~~~~~~~~
+4 warnings generated.
+Building target: VAI0.elf
+llvm-size --format=berkeley "VAI0.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 744076	    196	4355552	5099824	 4dd130	VAI0.elf
+llvm-objcopy "VAI0.elf" -O srec  "VAI0.srec"
+
+14:45:26 Build Finished. 0 errors, 4 warnings. (took 1s.217ms)
+

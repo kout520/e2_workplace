@@ -1,0 +1,8 @@
+14:20:28 **** 项目RA8P1_TEST_AI配置Debug的增量构建 ****
+make -r -j24 all 
+arm-none-eabi-size --format=berkeley "RA8P1_TEST_AI.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 502892	    136	 703362	1206390	 126876	RA8P1_TEST_AI.elf
+
+14:20:29 Build Finished. 0 errors, 0 warnings. (took 349ms)
+

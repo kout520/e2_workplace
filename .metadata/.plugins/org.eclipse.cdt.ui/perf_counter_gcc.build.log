@@ -1,0 +1,66 @@
+17:39:42 **** 项目perf_counter_gcc配置Debug的构建 ****
+make -r -j24 all 
+Building file: ../src/third/perf_counter/perf_counter.c
+Building file: ../src/third/perf_counter/perfc_port_default.c
+Building file: ../src/third/perf_counter/perfc_port_pmu.c
+Building file: ../src/third/coremark/core_list_join.c
+Building file: ../src/third/coremark/core_main.c
+Building file: ../src/third/coremark/core_matrix.c
+Building file: ../src/third/coremark/core_portme.c
+Building file: ../src/third/coremark/core_util.c
+Building file: ../src/third/coremark/core_state.c
+Building file: ../src/third/SEGGER_RTT/SEGGER_RTT.c
+Building file: ../src/third/SEGGER_RTT/SEGGER_RTT_printf.c
+Building file: ../src/source/console.c
+Building file: ../src/source/ra8p1_fault_handle.c
+Building file: ../src/hal_entry.c
+Building file: ../src/hal_warmstart.c
+../src/third/perf_counter/perf_counter.c:25:10: fatal error: cmsis_compiler.h: No such file or directory
+   25 | #include "cmsis_compiler.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../src/third/perf_counter/perf_counter.h:32,
+                 from ../src/third/perf_counter/perfc_port_pmu.c:26:
+../src/third/perf_counter/perfc_port_default.h:26:10: fatal error: cmsis_compiler.h: No such file or directory
+   26 | #include "cmsis_compiler.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/third/perf_counter/subdir.mk:31: src/third/perf_counter/perf_counter.o] Error 1
+make: *** Waiting for unfinished jobs....
+../src/third/perf_counter/perfc_port_default.c:24:10: fatal error: cmsis_compiler.h: No such file or directory
+   24 | #include "cmsis_compiler.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/third/perf_counter/subdir.mk:31: src/third/perf_counter/perfc_port_pmu.o] Error 1
+../src/third/coremark/core_portme.c:20:10: fatal error: hal_data.h: No such file or directory
+   20 | #include "hal_data.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/third/perf_counter/subdir.mk:31: src/third/perf_counter/perfc_port_default.o] Error 1
+make: *** [src/third/coremark/subdir.mk:40: src/third/coremark/core_portme.o] Error 1
+../src/source/ra8p1_fault_handle.c:3:10: fatal error: hal_data.h: No such file or directory
+    3 | #include "hal_data.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+In file included from ../src/hal_entry.c:1:
+C:/Users/kout/Desktop/cpkhmi_ra8p1/perf_counter_cpkhmi_ra8p1_ep/e2studio_gcc/src/source/console.h:4:10: fatal error: hal_data.h: No such file or directory
+    4 | #include "hal_data.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/source/subdir.mk:28: src/source/ra8p1_fault_handle.o] Error 1
+make: *** [src/subdir.mk:28: src/hal_entry.o] Error 1
+../src/hal_warmstart.c:7:10: fatal error: hal_data.h: No such file or directory
+    7 | #include "hal_data.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:28: src/hal_warmstart.o] Error 1
+In file included from ../src/source/console.c:3:
+../src/source/console.h:4:10: fatal error: hal_data.h: No such file or directory
+    4 | #include "hal_data.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/source/subdir.mk:28: src/source/console.o] Error 1
+"make -r -j24 all"以退出代码2结尾。构建可能不完整。
+
+17:39:43 Build Failed. 17 errors, 0 warnings. (took 649ms)
+

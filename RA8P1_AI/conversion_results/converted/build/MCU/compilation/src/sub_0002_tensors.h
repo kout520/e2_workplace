@@ -1,0 +1,34 @@
+#ifndef __SUB_0002_TENSORS_H__
+#define __SUB_0002_TENSORS_H__
+
+#include <stddef.h>
+#include <stdint.h>
+#include "ethosu_common.h"
+
+extern const TensorInfo sub_0002_tensors[];
+extern const size_t sub_0002_tensors_count;
+
+#define kArenaSize_sub_0002 17088
+
+// Addresses for each input and output buffer inside of the arena
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_3_70391;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_21_70361;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_19_70355;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_13_70379;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_11_70373;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_5_70397;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_22_70366;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_14_70384;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_strided_slice_6_70402;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_70396;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_5_70365;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_4_70360;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_3_70383;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_2_70378;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_truediv_1_70401;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_Sigmoid_81_70368;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_Sigmoid_51_70386;
+extern const uint32_t sub_0002_address_functional_15_1_tf_detect_1_Sigmoid_21_70404;
+
+
+#endif // __SUB_0002_TENSORS_H__

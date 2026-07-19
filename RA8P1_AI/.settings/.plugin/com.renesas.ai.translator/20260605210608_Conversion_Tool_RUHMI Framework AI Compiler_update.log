@@ -1,0 +1,22 @@
+2026-06-05 21:05:54,236 [INFO] (check_requirements.py #28, load_requirements): 📥 Downloading requirements from https://Tool-support.renesas.com/tool-support/Zoo/MCT/requirements.txt
+2026-06-05 21:05:54,239 [DEBUG] (connectionpool.py #1062, _new_conn): Starting new HTTPS connection (1): tool-support.renesas.com:443
+2026-06-05 21:05:55,091 [DEBUG] (connectionpool.py #544, _make_request): https://tool-support.renesas.com:443 "GET /tool-support/Zoo/MCT/requirements.txt HTTP/1.1" 200 None
+2026-06-05 21:05:55,094 [INFO] (check_requirements.py #56, check_requirements): mera: INSTALLED (2.6.0+pkg.4513)
+2026-06-05 21:05:55,096 [INFO] (check_requirements.py #63, check_requirements): mera_visualizer: NOT INSTALLED
+2026-06-05 21:05:55,096 [INFO] (check_requirements.py #19, install_package): ➡️ Installing: https://github.com/renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+Collecting mera-visualizer==2.5.0+mcuv4
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)')))
+
+
+[notice] A new release of pip is available: 23.0.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+2026-06-05 21:06:08,270 [ERROR] (check_requirements.py #24, install_package): ❌ Failed to install https://github.com/renesas/ruhmi-framework-mcu/raw/refs/heads/main/install/mera_visualizer-2.5.0+mcuv4-py3-none-any.whl
+2026-06-05 21:06:08,272 [INFO] (check_requirements.py #75, check_requirements): onnx==1.17.0: OK
+2026-06-05 21:06:08,273 [INFO] (check_requirements.py #75, check_requirements): tflite==2.18.0: OK
+[INFO] Success to execute the command
+Exit code: 1

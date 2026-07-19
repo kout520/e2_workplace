@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DrpAiTranslatorProjectSettings>
+    <ProjectSettingsInfo>
+        <name>RA8P1_TEST11</name>
+        <framework>2</framework>
+        <modelfile>digit4_detector.tflite</modelfile>
+        <output_directory>conversion_results</output_directory>
+        <docker_image_name>Unused property</docker_image_name>
+        <PytorchSettingInfo>
+            <configuration_type>false</configuration_type>
+            <configuration_file/>
+            <modelname/>
+            <model_weight/>
+            <input_layer_shape/>
+        </PytorchSettingInfo>
+    </ProjectSettingsInfo>
+    <DRP-AI_TVMSettingInfo>
+        <TransSettingInfo>
+            <item key="yolo-fastest-digit4_float32.tflite">conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_trans_config.json</item>
+            <item key="digit4_detector.tflite">conversion_results/conversion_tool_settings/digit4_detector.tflite_trans_config.json</item>
+            <item key="yolo-fastest-digit4.onnx">conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_trans_config.json</item>
+            <item key="D:\ai_train\dataset2\backup\yolo-fastest-digit4_float32.tflite">conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_trans_config.json</item>
+        </TransSettingInfo>
+        <QuantizationSetting>
+            <item key="yolo-fastest-digit4_float32.tflite">conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_quant_config.json</item>
+            <item key="digit4_detector.tflite">conversion_results/conversion_tool_settings/digit4_detector.tflite_quant_config.json</item>
+            <item key="yolo-fastest-digit4.onnx">conversion_results/conversion_tool_settings/yolo-fastest-digit4.onnx_quant_config.json</item>
+            <item key="D:\ai_train\dataset2\backup\yolo-fastest-digit4_float32.tflite">conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_quant_config.json</item>
+        </QuantizationSetting>
+    </DRP-AI_TVMSettingInfo>
+</DrpAiTranslatorProjectSettings>

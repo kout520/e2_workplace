@@ -1,0 +1,25 @@
+{
+  "inputs": [
+    [
+      "serving_default_keras_tensor_121_0",
+      [
+        "1",
+        "192",
+        "192",
+        "3"
+      ],
+      "UInt8"
+    ]
+  ],
+  "outputs": [
+    [
+      "StatefulPartitionedCall_1_0_70408",
+      [
+        "1",
+        "2268",
+        "6"
+      ],
+      "UInt8"
+    ]
+  ]
+}

@@ -1,0 +1,209 @@
+digraph g {
+subgraph cluster_graph{
+label = "graph";
+color = red;
+graphGraphOutputs [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD PORT="StatefulPartitionedCall_1_0_70031" BGCOLOR="white">StatefulPartitionedCall_1_0_70031 u8(1x5)[HW]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000\ni32(1)[C]"];
+graphInt32VecConstant_70001 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70001\ni32(1)[C]"];
+graphInt32VecConstant_70002 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70002\ni32(1)[C]"];
+graphInt32VecConstant_70003 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70003\ni32(5)[C]"];
+graphInt32VecConstant_70005 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70005\ni32(64)[C]"];
+graphInt32VecConstant_70007 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70007\ni32(96)[C]"];
+graphInt32VecConstant_70009 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70009\ni32(64)[C]"];
+graphInt32VecConstant_70011 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70011\ni32(32)[C]"];
+graphInt32VecConstant_70013 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70013\ni32(16)[C]"];
+graphInt8VecConstant_70004 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70004\ni8(5x64)[HW]"];
+graphInt8VecConstant_70006 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70006\ni8(64x6144)[HW]"];
+graphInt8VecConstant_70008 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70008\ni8(96x3x3x64)[OHWI]"];
+graphInt8VecConstant_70010 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70010\ni8(64x3x3x32)[OHWI]"];
+graphInt8VecConstant_70012 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70012\ni8(32x3x3x16)[OHWI]"];
+graphInt8VecConstant_70014 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70014\ni8(16x3x3x3)[OHWI]"];
+graphStatefulPartitionedCall_1_01_70030 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x5)[HW]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteSigmoid, StatefulPartitionedCall_1_01_70030</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x5)[HW]</TD></TR>
+</TABLE>>];graphStatefulPartitionedCall_1_0_70031 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x5)[HW]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteQuantize, StatefulPartitionedCall_1_0_70031</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output u8(1x5)[HW]</TD></TR>
+</TABLE>>];graphfunctional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x6144)[HW]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(64x6144)[HW]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteFullyConnectedBias, functional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028<FONT POINT-SIZE="8"><BR/>
+asymmetric_quantize_inputs = 0<BR/>
+fused_activation = RELU<BR/>
+keep_num_dims = 0<BR/>
+quantized_bias_type = dtype(Float32)<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x64)[HW]</TD></TR>
+</TABLE>>];graphfunctional_1_flatten_1_Reshape_70027 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="data" BGCOLOR="white">data i8(1x8x8x96)[NHWC]</TD><TD PORT="shape" BGCOLOR="white">shape i32(2)[C]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">CanReshape, functional_1_flatten_1_Reshape_70027</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x6144)[HW]</TD></TR>
+</TABLE>>];graphfunctional_1_flatten_1_Reshape_shape_70026 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="in_0" BGCOLOR="white">in_0 i32(1)[C]</TD><TD PORT="in_1" BGCOLOR="white">in_1 i32(1)[C]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePack, functional_1_flatten_1_Reshape_shape_70026<FONT POINT-SIZE="8"><BR/>
+axis = 0<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i32(2)[C]</TD></TR>
+</TABLE>>];graphfunctional_1_flatten_1_Shape_70024 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x8x8x96)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteShape, functional_1_flatten_1_Shape_70024</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i32(4)[C]</TD></TR>
+</TABLE>>];graphfunctional_1_flatten_1_strided_slice_70025 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i32(4)[C]</TD><TD PORT="begin" BGCOLOR="white">begin i32(1)[C]</TD><TD PORT="end" BGCOLOR="white">end i32(1)[C]</TD><TD PORT="strides" BGCOLOR="white">strides i32(1)[C]</TD></TR>
+<TR><TD COLSPAN="4" BORDER="0">TFLiteStridedSlice, functional_1_flatten_1_strided_slice_70025<FONT POINT-SIZE="8"><BR/>
+begin_mask = 0<BR/>
+ellipsis_mask = 0<BR/>
+end_mask = 0<BR/>
+new_axis_mask = 0<BR/>
+shrink_axis_mask = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="4" BGCOLOR="white" PORT="out"> Output i32(1)[C]</TD></TR>
+</TABLE>>];graphfunctional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x64)[HW]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(5x64)[HW]</TD><TD PORT="bias" BGCOLOR="white">bias i32(5)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteFullyConnectedBias, functional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029<FONT POINT-SIZE="8"><BR/>
+asymmetric_quantize_inputs = 0<BR/>
+fused_activation = NONE<BR/>
+keep_num_dims = 0<BR/>
+quantized_bias_type = dtype(Float32)<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x5)[HW]</TD></TR>
+</TABLE>>];graphfunctional_1_pool1_1_MaxPool2d_70017 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x128x128x16)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, functional_1_pool1_1_MaxPool2d_70017<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x64x64x16)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_pool2_1_MaxPool2d_70019 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x64x64x32)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, functional_1_pool2_1_MaxPool2d_70019<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x32x32x32)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_pool3_1_MaxPool2d_70021 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x32x32x64)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, functional_1_pool3_1_MaxPool2d_70021<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x16x16x64)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_pool4_1_MaxPool2d_70023 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x16x16x96)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, functional_1_pool4_1_MaxPool2d_70023<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x8x8x96)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x128x128x3)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(16x3x3x3)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(16)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, functional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x128x128x16)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x64x64x16)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(32x3x3x16)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, functional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x64x64x32)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x32x32x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(64x3x3x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, functional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x32x32x64)[NHWC]</TD></TR>
+</TABLE>>];graphfunctional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x16x16x64)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(96x3x3x64)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(96)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, functional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x16x16x96)[NHWC]</TD></TR>
+</TABLE>>];graphserving_default_input_0 [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD BORDER="0">serving_default_input_0</TD></TR>
+<TR><TD PORT="out" BGCOLOR="white" BORDER="1">Output u8(1x128x128x3)[NHWC]</TD></TR>
+</TABLE>>];graphtfl_quantize_70015 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input u8(1x128x128x3)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteQuantize, tfl_quantize_70015</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x128x128x3)[NHWC]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000:out:s -> graphfunctional_1_flatten_1_strided_slice_70025:begin:n;
+graphInt32VecConstant_70001:out:s -> graphfunctional_1_flatten_1_strided_slice_70025:end:n;
+graphInt32VecConstant_70002:out:s -> graphfunctional_1_flatten_1_Reshape_shape_70026:in_1:n;
+graphInt32VecConstant_70003:out:s -> graphfunctional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029:bias:n;
+graphInt32VecConstant_70005:out:s -> graphfunctional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028:bias:n;
+graphInt32VecConstant_70007:out:s -> graphfunctional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022:bias:n;
+graphInt32VecConstant_70009:out:s -> graphfunctional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020:bias:n;
+graphInt32VecConstant_70011:out:s -> graphfunctional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018:bias:n;
+graphInt32VecConstant_70013:out:s -> graphfunctional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016:bias:n;
+graphInt8VecConstant_70004:out:s -> graphfunctional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029:kernel:n;
+graphInt8VecConstant_70006:out:s -> graphfunctional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028:kernel:n;
+graphInt8VecConstant_70008:out:s -> graphfunctional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022:kernel:n;
+graphInt8VecConstant_70010:out:s -> graphfunctional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020:kernel:n;
+graphInt8VecConstant_70012:out:s -> graphfunctional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018:kernel:n;
+graphInt8VecConstant_70014:out:s -> graphfunctional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016:kernel:n;
+graphStatefulPartitionedCall_1_01_70030:out:s -> graphStatefulPartitionedCall_1_0_70031:input:n;
+graphStatefulPartitionedCall_1_0_70031:out:s -> graphGraphOutputs:StatefulPartitionedCall_1_0_70031:n;
+graphfunctional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028:out:s -> graphfunctional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029:input:n;
+graphfunctional_1_flatten_1_Reshape_70027:out:s -> graphfunctional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028:input:n;
+graphfunctional_1_flatten_1_Reshape_shape_70026:out:s -> graphfunctional_1_flatten_1_Reshape_70027:shape:n;
+graphfunctional_1_flatten_1_Shape_70024:out:s -> graphfunctional_1_flatten_1_strided_slice_70025:input:n;
+graphfunctional_1_flatten_1_strided_slice_70025:out:s -> graphfunctional_1_flatten_1_Reshape_shape_70026:in_0:n;
+graphfunctional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029:out:s -> graphStatefulPartitionedCall_1_01_70030:input:n;
+graphfunctional_1_pool1_1_MaxPool2d_70017:out:s -> graphfunctional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018:input:n;
+graphfunctional_1_pool2_1_MaxPool2d_70019:out:s -> graphfunctional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020:input:n;
+graphfunctional_1_pool3_1_MaxPool2d_70021:out:s -> graphfunctional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022:input:n;
+graphfunctional_1_pool4_1_MaxPool2d_70023:out:s -> graphfunctional_1_flatten_1_Reshape_70027:data:n;
+graphfunctional_1_pool4_1_MaxPool2d_70023:out:s -> graphfunctional_1_flatten_1_Shape_70024:input:n;
+graphfunctional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016:out:s -> graphfunctional_1_pool1_1_MaxPool2d_70017:input:n;
+graphfunctional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018:out:s -> graphfunctional_1_pool2_1_MaxPool2d_70019:input:n;
+graphfunctional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020:out:s -> graphfunctional_1_pool3_1_MaxPool2d_70021:input:n;
+graphfunctional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022:out:s -> graphfunctional_1_pool4_1_MaxPool2d_70023:input:n;
+graphserving_default_input_0:out:s -> graphtfl_quantize_70015:input:n;
+graphtfl_quantize_70015:out:s -> graphfunctional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016:input:n;
+}}

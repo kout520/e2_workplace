@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“RA8P1_TEST1/code/on5640.h”重命名为“ov5640.h”" description="重命名资源“on5640.h”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="code/on5640.h" name="ov5640.h" stamp="1779093283427" updateReferences="true"/>
+</session>

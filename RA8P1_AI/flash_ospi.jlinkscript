@@ -1,0 +1,14 @@
+// J-Link script: 通过 RA8P1 OSPI 烧录 W25Q256
+// 用于 Debug Config → Script File 指向此文件
+
+int InitTarget(void) {
+    // CPU 时钟初始化, 必须放在最开始
+    JLINK_SYS_Report("Initializing target for OSPI flash programming...");
+    return 0;
+}
+
+int SetupTarget(void) {
+    JLINK_SYS_Report("Setting up OSPI...");
+    // 配置 RA8P1 OSPI 寄存器以访问 W25Q256 @ 0x90000000
+    return 0;
+}

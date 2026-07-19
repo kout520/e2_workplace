@@ -1,0 +1,11 @@
+collapse/module.arm.cmsis.dsp.879216242=false
+collapse/module.arm.cmsis.nn.1216177712=false
+collapse/module.arm.ethosu.profiler.1705761185=false
+collapse/module.driver.i2c_on_iic_master.1800271629=false
+collapse/module.driver.ospi_on_ospi_b.1657521738=false
+collapse/module.driver.uart_on_sci_b_uart.1884883499=false
+collapse/module.google.tflm.core.lib.675238325=false
+collapse/module.google.tflm.kernel.cmsis.nn.639883978=false
+collapse/module.google.tflm.kernel.ethosu.1834752070=false
+collapse/module.middleware.rm_ethosu.1948863724=false
+eclipse.preferences.version=1

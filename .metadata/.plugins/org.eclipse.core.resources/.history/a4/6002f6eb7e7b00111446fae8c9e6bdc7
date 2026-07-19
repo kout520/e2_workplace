@@ -1,0 +1,153 @@
+2026-07-09 18:02:45,773 [INFO] (check_requirements.py #28, load_requirements): 📥 Downloading requirements from https://Tool-support.renesas.com/tool-support/Zoo/MCT/requirements.txt
+2026-07-09 18:02:45,779 [DEBUG] (connectionpool.py #1062, _new_conn): Starting new HTTPS connection (1): tool-support.renesas.com:443
+2026-07-09 18:02:48,405 [DEBUG] (connectionpool.py #544, _make_request): https://tool-support.renesas.com:443 "GET /tool-support/Zoo/MCT/requirements.txt HTTP/1.1" 200 None
+2026-07-09 18:02:48,412 [INFO] (check_requirements.py #58, check_requirements): mera: VERSION MISMATCH (installed 2.6.0+pkg.4513, required 2.6.0+pkg.4815)
+2026-07-09 18:02:48,413 [INFO] (check_requirements.py #63, check_requirements): mera_visualizer: NOT INSTALLED
+2026-07-09 18:02:48,414 [INFO] (check_requirements.py #75, check_requirements): onnx==1.17.0: OK
+2026-07-09 18:02:48,415 [INFO] (check_requirements.py #75, check_requirements): tflite==2.18.0: OK
+[INFO] Success to execute the command
+Exit code: 0
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py comm get_model_info --framework tflite --input_model D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4_float32.tflite --output_shape_dict_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_input_shape.json --output_model_info_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_model_info.json --accelerator_type ethos-u55 ]
+2026-07-09 18:03:14,090 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-09 18:03:14,367 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-09 18:03:14,372 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-09 18:03:14,374 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-09 18:03:14,374 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-09 18:03:14,399 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-09 18:03:14,403 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-09 18:03:15,005 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-09 18:03:15,006 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-09 18:03:15,007 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-09 18:03:15,008 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-09 18:03:15,009 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-09 18:03:15,010 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-09 18:03:15,034 [INFO] (get_model_info.py #523, main): [Parsing input model node start...]
+2026-07-09 18:03:15,034 [INFO] (get_model_info.py #422, make_shape_dict_from_model): Make shape_dict from model.
+2026-07-09 18:03:15,654 [INFO] (get_model_info.py #378, get_tflite_shape_dict): tflite_shape_dict: {'input': (1, 128, 128, 3)}
+2026-07-09 18:03:15,654 [INFO] (get_model_info.py #384, get_tflite_shape_dict): shape_dict: {'input': [1, 128, 128, 3]}
+2026-07-09 18:03:16.014666: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-09 18:03:21.491491: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-09 18:03:22,442 [DEBUG] (tpu_cluster_resolver.py #34, <module>): Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2026-07-09 18:03:24,684 [DEBUG] (__init__.py #47, <module>): Creating converter from 7 to 5
+2026-07-09 18:03:24,684 [DEBUG] (__init__.py #47, <module>): Creating converter from 5 to 7
+2026-07-09 18:03:24,684 [DEBUG] (__init__.py #47, <module>): Creating converter from 7 to 5
+2026-07-09 18:03:24,684 [DEBUG] (__init__.py #47, <module>): Creating converter from 5 to 7
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #221, is_tflite_quantized): === Input Details ===
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #223, is_tflite_quantized): Input tensor 0:
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #224, is_tflite_quantized):   name: input
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #225, is_tflite_quantized):   index: 0
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #226, is_tflite_quantized):   shape: [  1 128 128   3]
+2026-07-09 18:03:29,249 [INFO] (get_model_info.py #227, is_tflite_quantized):   dtype: <class 'numpy.float32'>
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #229, is_tflite_quantized):   quantization (deprecated)_soon): (0.0, 0)
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #230, is_tflite_quantized):   quantization_parameters: {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #231, is_tflite_quantized):   sparsity_parameters: {}
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #233, is_tflite_quantized): === Output Details ===
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #235, is_tflite_quantized): Output tensor 0:
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #236, is_tflite_quantized):   name: yolo_output_465
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #237, is_tflite_quantized):   index: 357
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #238, is_tflite_quantized):   shape: [18  6  6]
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #239, is_tflite_quantized):   dtype: <class 'numpy.float32'>
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #241, is_tflite_quantized):   quantization (deprecated_soon): (0.0, 0)
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #242, is_tflite_quantized):   quantization_parameters: {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #243, is_tflite_quantized):   sparsity_parameters: {}
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #235, is_tflite_quantized): Output tensor 1:
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #236, is_tflite_quantized):   name: yolo_output_497
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #237, is_tflite_quantized):   index: 366
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #238, is_tflite_quantized):   shape: [18 10 10]
+2026-07-09 18:03:29,250 [INFO] (get_model_info.py #239, is_tflite_quantized):   dtype: <class 'numpy.float32'>
+2026-07-09 18:03:29,251 [INFO] (get_model_info.py #241, is_tflite_quantized):   quantization (deprecated_soon): (0.0, 0)
+2026-07-09 18:03:29,251 [INFO] (get_model_info.py #242, is_tflite_quantized):   quantization_parameters: {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}
+2026-07-09 18:03:29,251 [INFO] (get_model_info.py #243, is_tflite_quantized):   sparsity_parameters: {}
+2026-07-09 18:03:29,253 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-09 18:03:29,255 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-09 18:03:29,256 [INFO] (get_model_info.py #537, main): [Parsing input model node finished]
+Variable container does not have anything...
+[INFO] Success to execute the command
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py ruhmi quantize --framework tflite --input_model D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4_float32.tflite --output_dir D:/e2_workplace/RA8P1_TEST11/conversion_results/quantized --quant_config_json D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_quant_config.json --shape_dict_json D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_input_shape.json ]
+2026-07-09 18:03:32,756 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-09 18:03:32,990 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-09 18:03:32,994 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-09 18:03:32,995 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-09 18:03:32,995 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-09 18:03:33,026 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-09 18:03:33,029 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-09 18:03:33,529 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-09 18:03:33,530 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-09 18:03:33,531 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-09 18:03:33,532 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-09 18:03:33,533 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-09 18:03:33,534 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-09 18:03:33,547 [INFO] (quantize_model.py #463, main): Arguments: Namespace(framework='tflite', input_model='D:/e2_workplace/RA8P1_TEST11/yolo-fastest-digit4_float32.tflite', output_dir='D:/e2_workplace/RA8P1_TEST11/conversion_results/quantized', quant_config_json='D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_quant_config.json', shape_dict_json='D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/yolo-fastest-digit4_float32.tflite_input_shape.json')
+Variable container does not have anything...
+2026-07-09 18:03:33,547 [INFO] (quantize_model.py #483, main): Using Device Platform: ALT2
+2026-07-09 18:03:33,547 [INFO] (quantize_model.py #387, quantize): Running MERA quantization ...
+2026-07-09 18:03:33,551 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in model
+2026-07-09 18:03:33,553 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_tflite_cli --io_desc_input D:\e2_workplace\RA8P1_TEST11\yolo-fastest-digit4_float32.tflite --io_desc_result C:\Users\kout\AppData\Local\Temp\tmpfzge6acm\tempfile'
+2026-07-09 18:03:33,869 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'input_desc.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\model
+2026-07-09 18:03:33,869 [DEBUG] (deploy_project.py #248, popd): (popd) cwd is now D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized
+2026-07-09 18:03:33,870 [INFO] (quantize_model.py #87, generate_random_data): Generate sample images with npy extension to temp_dir='C:\\Users\\kout\\AppData\\Local\\Temp\\tmp29q04dgj'...
+2026-07-09 18:03:33,878 [INFO] (quantize_model.py #154, glob_calibration_data_file): Calibration data size: 5
+2026-07-09 18:03:33,878 [INFO] (quantize_model.py #164, glob_calibration_data_file): Updated: {'skip_preprocess': 'False', 'num_calibrate_samples': 5, 'calibrate_method': 'MinMax', 'percentile_value': 99.999, 'quant_options': '', 'drp_compiler_version': '100', 'cpu_data_type': 'float16', 'nodes': [{'name': 'input', 'calibrate_sample_dir': 'C:\\Users\\kout\\AppData\\Local\\Temp\\tmp29q04dgj', 'mean': [0.0, 0.0, 0.0], 'std': [1.0, 1.0, 1.0], 'file_list': array([WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand4.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand1.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand3.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand0.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand2.npy')],
+      dtype=object)}], 'node': [{'name': 'input', 'calibrate_sample_dir': 'C:\\Users\\kout\\AppData\\Local\\Temp\\tmp29q04dgj', 'mean': [0.0, 0.0, 0.0], 'std': [1.0, 1.0, 1.0], 'file_list': array([WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand4.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand1.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand3.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand0.npy'),
+       WindowsPath('C:/Users/kout/AppData/Local/Temp/tmp29q04dgj/rand2.npy')],
+      dtype=object)}]}
+2026-07-09 18:03:33,878 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand4.npy...
+2026-07-09 18:03:33,878 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand4.npy
+2026-07-09 18:03:33,879 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand1.npy...
+2026-07-09 18:03:33,879 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand1.npy
+2026-07-09 18:03:33,879 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand3.npy...
+2026-07-09 18:03:33,879 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand3.npy
+2026-07-09 18:03:33,880 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand0.npy...
+2026-07-09 18:03:33,880 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand0.npy
+2026-07-09 18:03:33,880 [INFO] (quantize_model.py #196, read_calibration_data): Load C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand2.npy...
+2026-07-09 18:03:33,880 [WARNING] (quantize_model.py #200, read_calibration_data): No preprocessing functions are applied to this file: C:\Users\kout\AppData\Local\Temp\tmp29q04dgj\rand2.npy
+2026-07-09 18:03:33,881 [INFO] (deploy.py #309, deploy):  *** mera v2.6.0+pkg.4513 ***
+2026-07-09 18:03:33,881 [INFO] (deploy.py #310, deploy): Starting deployment of model 'yolo-fastest-digit4_float32'...
+2026-07-09 18:03:33,881 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in build
+2026-07-09 18:03:33,881 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in MERAInterpreter
+2026-07-09 18:03:33,883 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'deploy_cfg.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter
+2026-07-09 18:03:33,884 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_tflite_cli D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter\deploy_cfg.json'
+[2026-07-09 18:03:33.924] [info] Loading and converting TFLite model ... 
+[2026-07-09 18:03:33.924] [info] TFLite Model Version: 3
+ERROR: C:\ws\workspace\mera\package-cmake-win\mera_cmake\build_mcu\_deps\tflite_interpreter-src\tensorflow\lite\util.cc BytesRequired number of elements overflowed.
+
+ERROR: Node number 147 (MAX_POOL_2D) failed to prepare.
+[2026-07-09 18:03:33.925] [error] Failed to allocate tensors on TFLite interpreter
+[2026-07-09 18:03:33.925] [error] ERROR converting the TFLite model into dialect
+Traceback (most recent call last):
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\mera_quantizer.py", line 193, in __init__
+    self.fp32_mir_file = self.prj.get_artifact(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy_project.py", line 227, in get_artifact
+    raise FileNotFoundError(
+FileNotFoundError: Could not find artifact quantizer:model.mir in the project
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\cli.py", line 104, in <module>
+    dispatch(sys.argv[1:])
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\cli.py", line 100, in dispatch
+    handler(args.args)
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\commands\ruhmi\quantize_model.py", line 484, in main
+    mera_path = quantize(
+  File "D:\e2_workplace\RA8P1_TEST11\.settings\.plugin\com.renesas.ai.translator\renesas_aicompiler_caller\commands\ruhmi\quantize_model.py", line 408, in quantize
+    qtzer = mera.Quantizer(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\mera_quantizer.py", line 199, in __init__
+    self.fp32_mir_file = self.deployer.deploy(
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy.py", line 349, in deploy
+    self._apply_frontend(model, deploy_cfg_json)
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\deploy.py", line 246, in _apply_frontend
+    cmd(f"{find_tool('fe_tflite_cli')} {deploy_cfg_json}")
+  File "D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\mera\utils.py", line 35, in cmd
+    raise subprocess.CalledProcessError(p.returncode, command)
+subprocess.CalledProcessError: Command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_tflite_cli D:\e2_workplace\RA8P1_TEST11\conversion_results\quantized\build\MERAInterpreter\deploy_cfg.json' returned non-zero exit status 1.
+[ERROR] Failed to execute the command
+Failed to perform quantization.

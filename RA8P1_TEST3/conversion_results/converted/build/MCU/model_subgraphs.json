@@ -1,0 +1,665 @@
+{
+  "subgraphs": [
+    {
+      "nodes": [
+        {
+          "attributes": {},
+          "input_names": {
+            "in_0": {
+              "dt": "UInt8",
+              "layout": "HW",
+              "name": "StatefulPartitionedCall_0_70018",
+              "shape": [
+                1,
+                10
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 1
+          },
+          "op_name": "OutputNode",
+          "output": {
+            "dt": "UInt8",
+            "layout": "x",
+            "name": "GraphOutputs",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 8
+          },
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70000",
+            "shape": [
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 40
+          },
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70001",
+            "shape": [
+              10
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 512
+          },
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70003",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 256
+          },
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70005",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 128
+          },
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70007",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 1280
+          },
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "Int8VecConstant_70002",
+            "shape": [
+              10,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 401408
+          },
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "Int8VecConstant_70004",
+            "shape": [
+              128,
+              3136
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 18432
+          },
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70006",
+            "shape": [
+              64,
+              3,
+              3,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 288
+          },
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70008",
+            "shape": [
+              32,
+              3,
+              3,
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "beta": "1"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "model_dense_1_MatMul_model_dense_1_BiasAdd_70016",
+              "shape": [
+                1,
+                10
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 10
+          },
+          "op_name": "TFLiteSoftmax",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "StatefulPartitionedCall_01_70017",
+            "shape": [
+              1,
+              10
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "StatefulPartitionedCall_01_70017",
+              "shape": [
+                1,
+                10
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 10
+          },
+          "op_name": "TFLiteQuantize",
+          "output": {
+            "dt": "UInt8",
+            "layout": "HW",
+            "name": "StatefulPartitionedCall_0_70018",
+            "shape": [
+              1,
+              10
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70005",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "model_max_pooling2d_MaxPool_70011",
+              "shape": [
+                1,
+                14,
+                14,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70006",
+              "shape": [
+                64,
+                3,
+                3,
+                32
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 3612672,
+            "mem_parameter_bytes": 18688,
+            "mem_tensor_bytes": 12544
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "model_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012",
+            "shape": [
+              1,
+              14,
+              14,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70007",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "tfl_quantize_70009",
+              "shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70008",
+              "shape": [
+                32,
+                3,
+                3,
+                1
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 225792,
+            "mem_parameter_bytes": 416,
+            "mem_tensor_bytes": 25088
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "model_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010",
+            "shape": [
+              1,
+              28,
+              28,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "asymmetric_quantize_inputs": "0",
+            "fused_activation": "NONE",
+            "keep_num_dims": "0",
+            "quantized_bias_type": "dtype(Float32)"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70001",
+              "shape": [
+                10
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "model_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015",
+              "shape": [
+                1,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "Int8VecConstant_70002",
+              "shape": [
+                10,
+                128
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 1280,
+            "mem_parameter_bytes": 1320,
+            "mem_tensor_bytes": 10
+          },
+          "op_name": "TFLiteFullyConnectedBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "model_dense_1_MatMul_model_dense_1_BiasAdd_70016",
+            "shape": [
+              1,
+              10
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "asymmetric_quantize_inputs": "0",
+            "fused_activation": "RELU",
+            "keep_num_dims": "0",
+            "quantized_bias_type": "dtype(Float32)"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70003",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "model_flatten_Reshape_70014",
+              "shape": [
+                1,
+                3136
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "Int8VecConstant_70004",
+              "shape": [
+                128,
+                3136
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 401408,
+            "mem_parameter_bytes": 401920,
+            "mem_tensor_bytes": 128
+          },
+          "op_name": "TFLiteFullyConnectedBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "model_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015",
+            "shape": [
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "data": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "model_max_pooling2d_1_MaxPool_70013",
+              "shape": [
+                1,
+                7,
+                7,
+                64
+              ]
+            },
+            "shape": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70000",
+              "shape": [
+                2
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 8,
+            "mem_tensor_bytes": 3136
+          },
+          "op_name": "CanReshape",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "model_flatten_Reshape_70014",
+            "shape": [
+              1,
+              3136
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "model_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012",
+              "shape": [
+                1,
+                14,
+                14,
+                64
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 3136
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "model_max_pooling2d_1_MaxPool_70013",
+            "shape": [
+              1,
+              7,
+              7,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "model_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010",
+              "shape": [
+                1,
+                28,
+                28,
+                32
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 6272
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "model_max_pooling2d_MaxPool_70011",
+            "shape": [
+              1,
+              14,
+              14,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 784
+          },
+          "op_name": "Var",
+          "output": {
+            "dt": "UInt8",
+            "layout": "NHWC",
+            "name": "serving_default_input_1_0",
+            "shape": [
+              1,
+              28,
+              28,
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "UInt8",
+              "layout": "NHWC",
+              "name": "serving_default_input_1_0",
+              "shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            }
+          },
+          "node_data": {
+            "mac_count": 0,
+            "mem_parameter_bytes": 0,
+            "mem_tensor_bytes": 784
+          },
+          "op_name": "TFLiteQuantize",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "tfl_quantize_70009",
+            "shape": [
+              1,
+              28,
+              28,
+              1
+            ]
+          }
+        }
+      ],
+      "subgraph_name": "sub_0",
+      "target_name": "ARM_ETHOS_U55"
+    }
+  ]
+}

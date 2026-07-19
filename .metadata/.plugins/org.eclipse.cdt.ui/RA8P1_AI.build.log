@@ -1,0 +1,43 @@
+17:01:15 **** 项目RA8P1_AI配置Debug的增量构建 ****
+make -r --output-sync -j24 all 
+Building file: ../src/hal_entry.c
+In file included from ../src/hal_entry.c:5:
+In file included from D:\e2_workplace\RA8P1_AI\ra_gen\hal_data.h:6:
+In file included from D:\e2_workplace\RA8P1_AI\ra_gen\common_data.h:8:
+In file included from D:\e2_workplace\RA8P1_AI\ra\arm\CMSIS-DSP\Include\arm_math.h:35:
+D:\e2_workplace\RA8P1_AI\ra\arm\CMSIS-DSP\Include\dsp/utils.h:176:30: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+  176 |     n1 = __CLZ((uint32_t)hi) - 32;
+      |        ~ ~~~~~~~~~~~~~~~~~~~~^~~~
+D:\e2_workplace\RA8P1_AI\ra\arm\CMSIS-DSP\Include\dsp/utils.h:182:14: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+  182 |         n1 = __CLZ((uint32_t)lo);
+      |            ~ ^~~~~~~~~~~~~~~~~~~
+D:\e2_workplace\RA8P1_AI\ra\arm\CMSIS_6\CMSIS\Core\Include\cmsis_clang.h:254:25: note: expanded from macro '__CLZ'
+  254 | #define __CLZ(value)    __clz(value)
+      |                         ^~~~~~~~~~~~
+../src/hal_entry.c:159:58: warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  159 |             g_disp[i] = ((uint16_t)b5 << 11) | (g6 << 5) | r5;
+      |                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../src/hal_entry.c:213:52: warning: implicit conversion loses integer precision: 'int' to 'u16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  213 |                 LCD_DrawRectangle(bx, by, bx+bw, by+bh, RED);
+      |                 ~~~~~~~~~~~~~~~~~                ~~^~~
+../src/hal_entry.c:213:45: warning: implicit conversion loses integer precision: 'int' to 'u16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  213 |                 LCD_DrawRectangle(bx, by, bx+bw, by+bh, RED);
+      |                 ~~~~~~~~~~~~~~~~~         ~~^~~
+../src/hal_entry.c:213:39: warning: implicit conversion loses integer precision: 'int' to 'u16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  213 |                 LCD_DrawRectangle(bx, by, bx+bw, by+bh, RED);
+      |                 ~~~~~~~~~~~~~~~~~     ^~
+../src/hal_entry.c:213:35: warning: implicit conversion loses integer precision: 'int' to 'u16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  213 |                 LCD_DrawRectangle(bx, by, bx+bw, by+bh, RED);
+      |                 ~~~~~~~~~~~~~~~~~ ^~
+../src/hal_entry.c:59:13: warning: unused function 'detect' [-Wunused-function]
+   59 | static void detect(const uint8_t *out, int len, DetInfo *r) {
+      |             ^~~~~~
+8 warnings generated.
+Building target: RA8P1_AI.elf
+llvm-size --format=berkeley "RA8P1_AI.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40370	 110662	7647884	7798916	 770084	RA8P1_AI.elf
+llvm-objcopy "RA8P1_AI.elf" -O srec  "RA8P1_AI.srec"
+
+17:01:16 Build Finished. 0 errors, 8 warnings. (took 1s.52ms)
+

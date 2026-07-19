@@ -1,0 +1,613 @@
+{
+  "execution": {
+    "stages": [
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_ethos_u55",
+              "binaries_location": "sub_0000__ARM_ETHOS_U55_C_CODEGEN",
+              "name": "sub_0000"
+            },
+            {
+              "input_buffers": {
+                "serving_default_keras_tensor_121_0": 0
+              },
+              "input_order": [
+                "serving_default_keras_tensor_121_0"
+              ],
+              "output_buffers": {
+                "functional_15_1_tf_detect_1_Reshape_2_70372": 1,
+                "functional_15_1_tf_detect_1_Reshape_4_70354": 2,
+                "functional_15_1_tf_detect_1_Reshape_70390": 3
+              },
+              "output_order": [
+                "functional_15_1_tf_detect_1_Reshape_2_70372",
+                "functional_15_1_tf_detect_1_Reshape_4_70354",
+                "functional_15_1_tf_detect_1_Reshape_70390"
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_cpu",
+              "binaries_location": "sub_0001__CPU_C_CODEGEN",
+              "name": "sub_0001"
+            },
+            {
+              "input_buffers": {
+                "functional_15_1_tf_detect_1_Reshape_2_70372": 1,
+                "functional_15_1_tf_detect_1_Reshape_4_70354": 2,
+                "functional_15_1_tf_detect_1_Reshape_70390": 3
+              },
+              "input_order": [
+                "functional_15_1_tf_detect_1_Reshape_2_70372",
+                "functional_15_1_tf_detect_1_Reshape_4_70354",
+                "functional_15_1_tf_detect_1_Reshape_70390"
+              ],
+              "output_buffers": {
+                "functional_15_1_tf_detect_1_strided_slice_11_70373": 4,
+                "functional_15_1_tf_detect_1_strided_slice_13_70379": 5,
+                "functional_15_1_tf_detect_1_strided_slice_14_70384": 6,
+                "functional_15_1_tf_detect_1_strided_slice_19_70355": 7,
+                "functional_15_1_tf_detect_1_strided_slice_21_70361": 8,
+                "functional_15_1_tf_detect_1_strided_slice_22_70366": 9,
+                "functional_15_1_tf_detect_1_strided_slice_3_70391": 10,
+                "functional_15_1_tf_detect_1_strided_slice_5_70397": 11,
+                "functional_15_1_tf_detect_1_strided_slice_6_70402": 12
+              },
+              "output_order": [
+                "functional_15_1_tf_detect_1_strided_slice_11_70373",
+                "functional_15_1_tf_detect_1_strided_slice_13_70379",
+                "functional_15_1_tf_detect_1_strided_slice_14_70384",
+                "functional_15_1_tf_detect_1_strided_slice_19_70355",
+                "functional_15_1_tf_detect_1_strided_slice_21_70361",
+                "functional_15_1_tf_detect_1_strided_slice_22_70366",
+                "functional_15_1_tf_detect_1_strided_slice_3_70391",
+                "functional_15_1_tf_detect_1_strided_slice_5_70397",
+                "functional_15_1_tf_detect_1_strided_slice_6_70402"
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_ethos_u55",
+              "binaries_location": "sub_0002__ARM_ETHOS_U55_C_CODEGEN",
+              "name": "sub_0002"
+            },
+            {
+              "input_buffers": {
+                "functional_15_1_tf_detect_1_strided_slice_11_70373": 4,
+                "functional_15_1_tf_detect_1_strided_slice_13_70379": 5,
+                "functional_15_1_tf_detect_1_strided_slice_14_70384": 6,
+                "functional_15_1_tf_detect_1_strided_slice_19_70355": 7,
+                "functional_15_1_tf_detect_1_strided_slice_21_70361": 8,
+                "functional_15_1_tf_detect_1_strided_slice_22_70366": 9,
+                "functional_15_1_tf_detect_1_strided_slice_3_70391": 10,
+                "functional_15_1_tf_detect_1_strided_slice_5_70397": 11,
+                "functional_15_1_tf_detect_1_strided_slice_6_70402": 12
+              },
+              "input_order": [
+                "functional_15_1_tf_detect_1_strided_slice_6_70402",
+                "functional_15_1_tf_detect_1_strided_slice_14_70384",
+                "functional_15_1_tf_detect_1_strided_slice_22_70366",
+                "functional_15_1_tf_detect_1_strided_slice_5_70397",
+                "functional_15_1_tf_detect_1_strided_slice_11_70373",
+                "functional_15_1_tf_detect_1_strided_slice_13_70379",
+                "functional_15_1_tf_detect_1_strided_slice_19_70355",
+                "functional_15_1_tf_detect_1_strided_slice_21_70361",
+                "functional_15_1_tf_detect_1_strided_slice_3_70391"
+              ],
+              "output_buffers": {
+                "functional_15_1_tf_detect_1_Sigmoid_21_70404": 13,
+                "functional_15_1_tf_detect_1_Sigmoid_51_70386": 14,
+                "functional_15_1_tf_detect_1_Sigmoid_81_70368": 15,
+                "functional_15_1_tf_detect_1_truediv_1_70401": 16,
+                "functional_15_1_tf_detect_1_truediv_2_70378": 17,
+                "functional_15_1_tf_detect_1_truediv_3_70383": 18,
+                "functional_15_1_tf_detect_1_truediv_4_70360": 19,
+                "functional_15_1_tf_detect_1_truediv_5_70365": 20,
+                "functional_15_1_tf_detect_1_truediv_70396": 21
+              },
+              "output_order": [
+                "functional_15_1_tf_detect_1_Sigmoid_21_70404",
+                "functional_15_1_tf_detect_1_Sigmoid_51_70386",
+                "functional_15_1_tf_detect_1_Sigmoid_81_70368",
+                "functional_15_1_tf_detect_1_truediv_1_70401",
+                "functional_15_1_tf_detect_1_truediv_2_70378",
+                "functional_15_1_tf_detect_1_truediv_3_70383",
+                "functional_15_1_tf_detect_1_truediv_4_70360",
+                "functional_15_1_tf_detect_1_truediv_5_70365",
+                "functional_15_1_tf_detect_1_truediv_70396"
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_cpu",
+              "binaries_location": "sub_0003__CPU_C_CODEGEN",
+              "name": "sub_0003"
+            },
+            {
+              "input_buffers": {
+                "functional_15_1_tf_detect_1_Sigmoid_21_70404": 13,
+                "functional_15_1_tf_detect_1_Sigmoid_51_70386": 14,
+                "functional_15_1_tf_detect_1_Sigmoid_81_70368": 15,
+                "functional_15_1_tf_detect_1_truediv_1_70401": 16,
+                "functional_15_1_tf_detect_1_truediv_2_70378": 17,
+                "functional_15_1_tf_detect_1_truediv_3_70383": 18,
+                "functional_15_1_tf_detect_1_truediv_4_70360": 19,
+                "functional_15_1_tf_detect_1_truediv_5_70365": 20,
+                "functional_15_1_tf_detect_1_truediv_70396": 21
+              },
+              "input_order": [
+                "functional_15_1_tf_detect_1_truediv_70396",
+                "functional_15_1_tf_detect_1_truediv_1_70401",
+                "functional_15_1_tf_detect_1_Sigmoid_21_70404",
+                "functional_15_1_tf_detect_1_truediv_2_70378",
+                "functional_15_1_tf_detect_1_truediv_3_70383",
+                "functional_15_1_tf_detect_1_Sigmoid_51_70386",
+                "functional_15_1_tf_detect_1_truediv_4_70360",
+                "functional_15_1_tf_detect_1_truediv_5_70365",
+                "functional_15_1_tf_detect_1_Sigmoid_81_70368"
+              ],
+              "output_buffers": {
+                "functional_15_1_tf_detect_1_Reshape_1_70406": 22,
+                "functional_15_1_tf_detect_1_Reshape_3_70388": 23,
+                "functional_15_1_tf_detect_1_Reshape_5_70370": 24
+              },
+              "output_order": [
+                "functional_15_1_tf_detect_1_Reshape_1_70406",
+                "functional_15_1_tf_detect_1_Reshape_3_70388",
+                "functional_15_1_tf_detect_1_Reshape_5_70370"
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_ethos_u55",
+              "binaries_location": "sub_0004__ARM_ETHOS_U55_C_CODEGEN",
+              "name": "sub_0004"
+            },
+            {
+              "input_buffers": {
+                "functional_15_1_tf_detect_1_Reshape_1_70406": 22,
+                "functional_15_1_tf_detect_1_Reshape_3_70388": 23,
+                "functional_15_1_tf_detect_1_Reshape_5_70370": 24
+              },
+              "input_order": [
+                "functional_15_1_tf_detect_1_Reshape_1_70406",
+                "functional_15_1_tf_detect_1_Reshape_3_70388",
+                "functional_15_1_tf_detect_1_Reshape_5_70370"
+              ],
+              "output_buffers": {
+                "StatefulPartitionedCall_1_0_70408": 25
+              },
+              "output_order": [
+                "StatefulPartitionedCall_1_0_70408"
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "memory": {
+    "buffers": [
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 110592,
+        "data_type": "uint8",
+        "name": "serving_default_keras_tensor_121_0",
+        "offset": 0,
+        "shape": [
+          1,
+          192,
+          192,
+          3
+        ],
+        "size": 110592
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 2592,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_2_70372",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          6
+        ],
+        "size": 2592
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 648,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_4_70354",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          6
+        ],
+        "size": 648
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 10368,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_70390",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          6
+        ],
+        "size": 10368
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_11_70373",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_13_70379",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_14_70384",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_19_70355",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_21_70361",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_22_70366",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_3_70391",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_5_70397",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_strided_slice_6_70402",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Sigmoid_21_70404",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Sigmoid_51_70386",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Sigmoid_81_70368",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_1_70401",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_2_70378",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 864,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_3_70383",
+        "offset": 0,
+        "shape": [
+          1,
+          144,
+          3,
+          2
+        ],
+        "size": 864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_4_70360",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 216,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_5_70365",
+        "offset": 0,
+        "shape": [
+          1,
+          36,
+          3,
+          2
+        ],
+        "size": 216
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 3456,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_truediv_70396",
+        "offset": 0,
+        "shape": [
+          1,
+          576,
+          3,
+          2
+        ],
+        "size": 3456
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 10368,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_1_70406",
+        "offset": 0,
+        "shape": [
+          1,
+          1728,
+          6
+        ],
+        "size": 10368
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 2592,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_3_70388",
+        "offset": 0,
+        "shape": [
+          1,
+          432,
+          6
+        ],
+        "size": 2592
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 648,
+        "data_type": "int8",
+        "name": "functional_15_1_tf_detect_1_Reshape_5_70370",
+        "offset": 0,
+        "shape": [
+          1,
+          108,
+          6
+        ],
+        "size": 648
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 13608,
+        "data_type": "uint8",
+        "name": "StatefulPartitionedCall_1_0_70408",
+        "offset": 0,
+        "shape": [
+          1,
+          2268,
+          6
+        ],
+        "size": 13608
+      }
+    ],
+    "input_buffers": [
+      [
+        "serving_default_keras_tensor_121_0",
+        0
+      ]
+    ],
+    "output_buffers": [
+      [
+        "StatefulPartitionedCall_1_0_70408",
+        25
+      ]
+    ]
+  }
+}

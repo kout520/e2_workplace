@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_AI\ Debug_Flat/activeLaunchMode=debug
+com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_AI\ Debug_Flat/activeLaunchTarget=null\:---
+com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST1\ Debug_Flat/activeLaunchMode=debug
+com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST1\ Debug_Flat/activeLaunchTarget=null\:---
+configDescList=com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST2 Debug_Flat,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:proj_ra8p1_ruhmi Debug_Flat,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:VAI0 Debug_Flat,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_AI Debug_Flat,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST_AI Debug_Flat,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST11.elf,com.renesas.cdt.launch.dsf.launching.gdbLocalLaunchDescriptorType\:RA8P1_TEST1 Debug_Flat
+eclipse.preferences.version=1
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:ActivationFunctions/activeLaunchMode=run
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:ActivationFunctions/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

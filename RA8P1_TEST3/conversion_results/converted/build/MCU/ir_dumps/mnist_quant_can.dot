@@ -1,0 +1,123 @@
+digraph g {
+subgraph cluster_graph{
+label = "graph";
+color = red;
+graphGraphOutputs [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD PORT="StatefulPartitionedCall_0_70018" BGCOLOR="white">StatefulPartitionedCall_0_70018 u8(1x10)[HW]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000\ni32(2)[C]"];
+graphInt32VecConstant_70001 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70001\ni32(10)[C]"];
+graphInt32VecConstant_70003 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70003\ni32(128)[C]"];
+graphInt32VecConstant_70005 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70005\ni32(64)[C]"];
+graphInt32VecConstant_70007 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70007\ni32(32)[C]"];
+graphInt8VecConstant_70002 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70002\ni8(10x128)[HW]"];
+graphInt8VecConstant_70004 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70004\ni8(128x3136)[HW]"];
+graphInt8VecConstant_70006 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70006\ni8(64x3x3x32)[OHWI]"];
+graphInt8VecConstant_70008 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70008\ni8(32x3x3x1)[OHWI]"];
+graphStatefulPartitionedCall_01_70017 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x10)[HW]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteSoftmax, StatefulPartitionedCall_01_70017<FONT POINT-SIZE="8"><BR/>
+beta = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x10)[HW]</TD></TR>
+</TABLE>>];graphStatefulPartitionedCall_0_70018 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x10)[HW]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteQuantize, StatefulPartitionedCall_0_70018</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output u8(1x10)[HW]</TD></TR>
+</TABLE>>];graphmodel_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(64x3x3x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, model_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x64)[NHWC]</TD></TR>
+</TABLE>>];graphmodel_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x1)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(32x3x3x1)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, model_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x28x28x32)[NHWC]</TD></TR>
+</TABLE>>];graphmodel_dense_1_MatMul_model_dense_1_BiasAdd_70016 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x128)[HW]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(10x128)[HW]</TD><TD PORT="bias" BGCOLOR="white">bias i32(10)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteFullyConnectedBias, model_dense_1_MatMul_model_dense_1_BiasAdd_70016<FONT POINT-SIZE="8"><BR/>
+asymmetric_quantize_inputs = 0<BR/>
+fused_activation = NONE<BR/>
+keep_num_dims = 0<BR/>
+quantized_bias_type = dtype(Float32)<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x10)[HW]</TD></TR>
+</TABLE>>];graphmodel_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x3136)[HW]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x3136)[HW]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteFullyConnectedBias, model_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015<FONT POINT-SIZE="8"><BR/>
+asymmetric_quantize_inputs = 0<BR/>
+fused_activation = RELU<BR/>
+keep_num_dims = 0<BR/>
+quantized_bias_type = dtype(Float32)<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x128)[HW]</TD></TR>
+</TABLE>>];graphmodel_flatten_Reshape_70014 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="data" BGCOLOR="white">data i8(1x7x7x64)[NHWC]</TD><TD PORT="shape" BGCOLOR="white">shape i32(2)[C]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">CanReshape, model_flatten_Reshape_70014</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x3136)[HW]</TD></TR>
+</TABLE>>];graphmodel_max_pooling2d_1_MaxPool_70013 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x64)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, model_max_pooling2d_1_MaxPool_70013<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x7x7x64)[NHWC]</TD></TR>
+</TABLE>>];graphmodel_max_pooling2d_MaxPool_70011 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x32)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteMaxPool, model_max_pooling2d_MaxPool_70011<FONT POINT-SIZE="8"><BR/>
+fused_activation = NONE<BR/>
+kernel_h = 2<BR/>
+kernel_w = 2<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x14x14x32)[NHWC]</TD></TR>
+</TABLE>>];graphserving_default_input_1_0 [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD BORDER="0">serving_default_input_1_0</TD></TR>
+<TR><TD PORT="out" BGCOLOR="white" BORDER="1">Output u8(1x28x28x1)[NHWC]</TD></TR>
+</TABLE>>];graphtfl_quantize_70009 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input u8(1x28x28x1)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteQuantize, tfl_quantize_70009</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x28x28x1)[NHWC]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000:out:s -> graphmodel_flatten_Reshape_70014:shape:n;
+graphInt32VecConstant_70001:out:s -> graphmodel_dense_1_MatMul_model_dense_1_BiasAdd_70016:bias:n;
+graphInt32VecConstant_70003:out:s -> graphmodel_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015:bias:n;
+graphInt32VecConstant_70005:out:s -> graphmodel_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012:bias:n;
+graphInt32VecConstant_70007:out:s -> graphmodel_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010:bias:n;
+graphInt8VecConstant_70002:out:s -> graphmodel_dense_1_MatMul_model_dense_1_BiasAdd_70016:kernel:n;
+graphInt8VecConstant_70004:out:s -> graphmodel_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015:kernel:n;
+graphInt8VecConstant_70006:out:s -> graphmodel_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012:kernel:n;
+graphInt8VecConstant_70008:out:s -> graphmodel_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010:kernel:n;
+graphStatefulPartitionedCall_01_70017:out:s -> graphStatefulPartitionedCall_0_70018:input:n;
+graphStatefulPartitionedCall_0_70018:out:s -> graphGraphOutputs:StatefulPartitionedCall_0_70018:n;
+graphmodel_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012:out:s -> graphmodel_max_pooling2d_1_MaxPool_70013:input:n;
+graphmodel_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010:out:s -> graphmodel_max_pooling2d_MaxPool_70011:input:n;
+graphmodel_dense_1_MatMul_model_dense_1_BiasAdd_70016:out:s -> graphStatefulPartitionedCall_01_70017:input:n;
+graphmodel_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015:out:s -> graphmodel_dense_1_MatMul_model_dense_1_BiasAdd_70016:input:n;
+graphmodel_flatten_Reshape_70014:out:s -> graphmodel_dense_MatMul_model_dense_Relu_model_dense_BiasAdd_70015:input:n;
+graphmodel_max_pooling2d_1_MaxPool_70013:out:s -> graphmodel_flatten_Reshape_70014:data:n;
+graphmodel_max_pooling2d_MaxPool_70011:out:s -> graphmodel_conv2d_1_Relu_model_conv2d_1_BiasAdd_model_conv2d_1_Conv2D_model_conv2d_1_BiasAdd_ReadVariableOp_70012:input:n;
+graphserving_default_input_1_0:out:s -> graphtfl_quantize_70009:input:n;
+graphtfl_quantize_70009:out:s -> graphmodel_conv2d_Relu_model_conv2d_BiasAdd_model_conv2d_Conv2D_model_conv2d_BiasAdd_ReadVariableOp_70010:input:n;
+}}

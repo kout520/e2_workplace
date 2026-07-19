@@ -1,0 +1,8 @@
+ra/arm/CMSIS-NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s4.o: \
+  ..\ra\arm\CMSIS-NN\Source\ConvolutionFunctions\arm_depthwise_conv_wrapper_s4.c \
+  D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nnfunctions.h \
+  D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nn_math_types.h \
+  D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nn_types.h
+D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nnfunctions.h:
+D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nn_math_types.h:
+D:\e2_workplace\VAI0\ra\arm\CMSIS-NN\Include\arm_nn_types.h:

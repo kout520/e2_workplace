@@ -1,0 +1,140 @@
+2026-07-10 13:00:22,384 [INFO] (check_requirements.py #28, load_requirements): 📥 Downloading requirements from https://Tool-support.renesas.com/tool-support/Zoo/MCT/requirements.txt
+2026-07-10 13:00:22,386 [DEBUG] (connectionpool.py #1062, _new_conn): Starting new HTTPS connection (1): tool-support.renesas.com:443
+2026-07-10 13:00:23,446 [DEBUG] (connectionpool.py #544, _make_request): https://tool-support.renesas.com:443 "GET /tool-support/Zoo/MCT/requirements.txt HTTP/1.1" 200 None
+2026-07-10 13:00:23,449 [INFO] (check_requirements.py #58, check_requirements): mera: VERSION MISMATCH (installed 2.6.0+pkg.4513, required 2.6.0+pkg.4815)
+2026-07-10 13:00:23,450 [INFO] (check_requirements.py #63, check_requirements): mera_visualizer: NOT INSTALLED
+2026-07-10 13:00:23,451 [INFO] (check_requirements.py #75, check_requirements): onnx==1.17.0: OK
+2026-07-10 13:00:23,452 [INFO] (check_requirements.py #75, check_requirements): tflite==2.18.0: OK
+[INFO] Success to execute the command
+Exit code: 0
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py comm get_model_info --framework tflite --input_model D:/e2_workplace/RA8P1_TEST11/digit4_detector.tflite --output_shape_dict_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/digit4_detector.tflite_input_shape.json --output_model_info_jsonpath D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/digit4_detector.tflite_model_info.json --accelerator_type ethos-u55 ]
+2026-07-10 13:00:32,749 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-10 13:00:32,918 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-10 13:00:32,922 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-10 13:00:32,923 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-10 13:00:32,923 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-10 13:00:32,940 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-10 13:00:32,944 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-10 13:00:33,345 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-10 13:00:33,346 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-10 13:00:33,348 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-10 13:00:33,348 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-10 13:00:33,350 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-10 13:00:33,350 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-10 13:00:33,374 [INFO] (get_model_info.py #523, main): [Parsing input model node start...]
+2026-07-10 13:00:33,374 [INFO] (get_model_info.py #422, make_shape_dict_from_model): Make shape_dict from model.
+2026-07-10 13:00:33,535 [INFO] (get_model_info.py #378, get_tflite_shape_dict): tflite_shape_dict: {'serving_default_input:0': (1, 128, 128, 3)}
+2026-07-10 13:00:33,535 [INFO] (get_model_info.py #384, get_tflite_shape_dict): shape_dict: {'serving_default_input:0': [1, 128, 128, 3]}
+2026-07-10 13:00:33.584507: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-10 13:00:34.317062: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-10 13:00:34,415 [DEBUG] (tpu_cluster_resolver.py #34, <module>): Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2026-07-10 13:00:34,726 [DEBUG] (__init__.py #47, <module>): Creating converter from 7 to 5
+2026-07-10 13:00:34,726 [DEBUG] (__init__.py #47, <module>): Creating converter from 5 to 7
+2026-07-10 13:00:34,726 [DEBUG] (__init__.py #47, <module>): Creating converter from 7 to 5
+2026-07-10 13:00:34,726 [DEBUG] (__init__.py #47, <module>): Creating converter from 5 to 7
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #221, is_tflite_quantized): === Input Details ===
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #223, is_tflite_quantized): Input tensor 0:
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #224, is_tflite_quantized):   name: serving_default_input:0
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #225, is_tflite_quantized):   index: 0
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #226, is_tflite_quantized):   shape: [  1 128 128   3]
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #227, is_tflite_quantized):   dtype: <class 'numpy.uint8'>
+2026-07-10 13:00:35,454 [INFO] (get_model_info.py #229, is_tflite_quantized):   quantization (deprecated)_soon): (0.003921568859368563, 0)
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #230, is_tflite_quantized):   quantization_parameters: {'scales': array([0.00392157], dtype=float32), 'zero_points': array([0]), 'quantized_dimension': 0}
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #231, is_tflite_quantized):   sparsity_parameters: {}
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #233, is_tflite_quantized): === Output Details ===
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #235, is_tflite_quantized): Output tensor 0:
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #236, is_tflite_quantized):   name: StatefulPartitionedCall_1:0
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #237, is_tflite_quantized):   index: 32
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #238, is_tflite_quantized):   shape: [1 5]
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #239, is_tflite_quantized):   dtype: <class 'numpy.uint8'>
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #241, is_tflite_quantized):   quantization (deprecated_soon): (0.00390625, 0)
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #242, is_tflite_quantized):   quantization_parameters: {'scales': array([0.00390625], dtype=float32), 'zero_points': array([0]), 'quantized_dimension': 0}
+2026-07-10 13:00:35,456 [INFO] (get_model_info.py #243, is_tflite_quantized):   sparsity_parameters: {}
+2026-07-10 13:00:35,457 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-10 13:00:35,458 [INFO] (get_model_info.py #504, write_dict2json): Write dictionary to json file.
+2026-07-10 13:00:35,458 [INFO] (get_model_info.py #537, main): [Parsing input model node finished]
+Variable container does not have anything...
+[INFO] Success to execute the command
+CMD:[D:/e2_workplace/.metadata/.plugins/com.renesas.ai.translator/py.bat D:/e2_workplace/RA8P1_TEST11/.settings/.plugin/com.renesas.ai.translator/renesas_aicompiler_caller/cli.py ruhmi deploy --framework quantized --input_model D:/e2_workplace/RA8P1_TEST11/digit4_detector.tflite --output_dir D:/e2_workplace/RA8P1_TEST11/conversion_results/converted --optimization_mode 0 --memory_mode 0 --mera_options  --vela_options  --shape_dict_json D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/digit4_detector.tflite_input_shape.json ]
+2026-07-10 13:00:47,950 [INFO] (environment_check.py #288, exec_environment_check): Execute environment check ...
+2026-07-10 13:00:48,118 [DEBUG] (__init__.py #342, wrapper): matplotlib data path: D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\lib\site-packages\matplotlib\mpl-data
+2026-07-10 13:00:48,122 [DEBUG] (__init__.py #342, wrapper): CONFIGDIR=C:\Users\kout\.matplotlib
+2026-07-10 13:00:48,123 [DEBUG] (__init__.py #1560, <module>): interactive is False
+2026-07-10 13:00:48,123 [DEBUG] (__init__.py #1561, <module>): platform is win32
+2026-07-10 13:00:48,141 [DEBUG] (__init__.py #342, wrapper): CACHEDIR=C:\Users\kout\.matplotlib
+2026-07-10 13:00:48,143 [DEBUG] (font_manager.py #1635, _load_fontmanager): Using fontManager instance from C:\Users\kout\.matplotlib\fontlist-v390.json
+2026-07-10 13:00:48,544 [INFO] (environment_check.py #206, _check_python_deps_for_windows): mera version 2.6.0+pkg.4513 released on 2026-03-05
+2026-07-10 13:00:48,545 [INFO] (environment_check.py #192, _check_python_package_and_version): 'mera' version 2.6.0+pkg.4513 is installed.
+2026-07-10 13:00:48,545 [INFO] (environment_check.py #192, _check_python_package_and_version): 'ethos-u-vela' version 4.2.0 is installed.
+2026-07-10 13:00:48,546 [INFO] (environment_check.py #192, _check_python_package_and_version): 'tflite' version 2.18.0 is installed.
+2026-07-10 13:00:48,548 [INFO] (environment_check.py #192, _check_python_package_and_version): 'onnx' version 1.17.0 is installed.
+2026-07-10 13:00:48,549 [INFO] (environment_check.py #192, _check_python_package_and_version): 'typing_extensions' version 4.15.0 is installed.
+2026-07-10 13:00:48,563 [INFO] (deploy_model.py #335, main): Arguments: Namespace(framework='quantized', input_model='D:/e2_workplace/RA8P1_TEST11/digit4_detector.tflite', output_dir='D:/e2_workplace/RA8P1_TEST11/conversion_results/converted', shape_dict_json='D:/e2_workplace/RA8P1_TEST11/conversion_results/conversion_tool_settings/digit4_detector.tflite_input_shape.json', optimization_mode=0, memory_mode=0, use_only_cpu=False, weight_loc=0, ethos_configuration_filepath=None, mera_options='', vela_options='')
+2026-07-10 13:00:48,563 [INFO] (deploy_model.py #336, main): Mera options: Namespace(target='mcu', enable_ospi=False, enable_ref_data=True, suffix='', use_x86=False, args=[])
+2026-07-10 13:00:48,563 [INFO] (deploy_model.py #337, main): Vela options: Namespace(sys_config='RA8P1', accel_config='ethos-u55-256', verbose_all=False, args=[])
+Variable container does not have anything...
+2026-07-10 13:00:48,563 [INFO] (deploy_model.py #361, main): Targeting MCU on ALT2 
+2026-07-10 13:00:48,563 [INFO] (deploy_model.py #294, compile_mera): 
+Deploying MERA model ...
+2026-07-10 13:00:48,566 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in model
+2026-07-10 13:00:48,567 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_tflite_cli --io_desc_input D:\e2_workplace\RA8P1_TEST11\digit4_detector.tflite --io_desc_result C:\Users\kout\AppData\Local\Temp\tmpg0o8ezip\tempfile'
+2026-07-10 13:00:48,614 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'input_desc.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\model
+2026-07-10 13:00:48,615 [DEBUG] (deploy_project.py #248, popd): (popd) cwd is now D:\e2_workplace\RA8P1_TEST11\conversion_results\converted
+2026-07-10 13:00:48,615 [INFO] (deploy.py #309, deploy):  *** mera v2.6.0+pkg.4513 ***
+2026-07-10 13:00:48,615 [INFO] (deploy.py #310, deploy): Starting deployment of model 'digit4_detector'...
+2026-07-10 13:00:48,615 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in build
+2026-07-10 13:00:48,615 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in MCU
+2026-07-10 13:00:48,616 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'deploy_cfg.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU
+2026-07-10 13:00:48,617 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\fe_tflite_cli D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\deploy_cfg.json'
+2026-07-10 13:00:48,689 [DEBUG] (deploy_project.py #241, pushd): (pushd) Running in model
+2026-07-10 13:00:48,690 [DEBUG] (deploy_project.py #208, save_artifact): Saved json artifact 'input_desc.json' into D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\model
+2026-07-10 13:00:48,690 [DEBUG] (deploy_project.py #248, popd): (popd) cwd is now D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU
+2026-07-10 13:00:48,703 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\ccodegen\c_codegen D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\compilation D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\compilation\src  '
+2026-07-10 13:00:48,892 [DEBUG] (utils.py #22, cmd): Running command 'vela --config D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\ccodegen\system_config.ini --system-config RA8P1 --memory-mode Sram_Only --accelerator-config ethos-u55-256 --optimise Performance --output-dir D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\compilation\sub_0000__ARM_ETHOS_U55_C_CODEGEN  D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\compilation\sub_0000__ARM_ETHOS_U55_C_CODEGEN/model.tflite'
+2026-07-10 13:00:49,860 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\ccodegen\vela_optimized_to_source D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU  '
+2026-07-10 13:00:50,084 [DEBUG] (utils.py #22, cmd): Running command 'D:\download\ruhmi-framework-mcu-main\ruhmi-framework-mcu-main\.venv\Lib\site-packages\mera\bin_utils\ccodegen\tflite_io_data D:\e2_workplace\RA8P1_TEST11\conversion_results\converted\build\MCU\deploy_cfg.json'
+2026-07-10 13:00:50,387 [INFO] (deploy_model.py #378, main): SUCCESS, saved at D:/e2_workplace/RA8P1_TEST11/conversion_results/converted
+[2026-07-10 13:00:48.656] [info] Loading and converting TFLite model ... 
+[2026-07-10 13:00:48.657] [info] TFLite Model Version: 3
+[2026-07-10 13:00:48.666] [info] Converting to canonical ...
+[2026-07-10 13:00:48.669] [info] Converting to target IR ...
+[2026-07-10 13:00:48.672] [info] Dividing and exporting regions ...
+[2026-07-10 13:00:48.674] [info] Ethos-U support is enabled, matching patterns for target Ethos-U55
+[2026-07-10 13:00:48.680] [info] Model is fully captured to target ARM_ETHOS_U55
+>> src_dir: 
+"D:\\e2_workplace\\RA8P1_TEST11\\conversion_results\\converted\\build\\MCU\\compilation\\src/"
+Info: Changing const_mem_area from Sram to OnChipFlash. This will use the same characteristics as Sram.
+Warning: Input TensorFlow Lite network contains a zero length buffer (index = 0) which is semantically not empty. However, it will be treated as an empty buffer.
+
+Network summary for model
+Accelerator configuration               Ethos_U55_256
+System configuration                            RA8P1
+Memory mode                                 Sram_Only
+Accelerator clock                                 500 MHz
+Design peak SRAM bandwidth                       1.86 GB/s
+Design peak On-chip Flash bandwidth              1.86 GB/s
+
+Total SRAM used                                512.00 KiB
+Total On-chip Flash used                       455.83 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 12 (100.0%)
+
+Average SRAM bandwidth                           1.06 GB/s
+Input   SRAM bandwidth                           1.22 MB/batch
+Weight  SRAM bandwidth                           0.00 MB/batch
+Output  SRAM bandwidth                           0.83 MB/batch
+Total   SRAM bandwidth                           2.05 MB/batch
+Total   SRAM bandwidth            per input      2.05 MB/inference (batch size 1)
+
+Average On-chip Flash bandwidth                  0.42 GB/s
+Input   On-chip Flash bandwidth                  0.00 MB/batch
+Weight  On-chip Flash bandwidth                  0.81 MB/batch
+Output  On-chip Flash bandwidth                  0.00 MB/batch
+Total   On-chip Flash bandwidth                  0.81 MB/batch
+Total   On-chip Flash bandwidth   per input      0.81 MB/inference (batch size 1)
+
+Neural network macs                          59908421 MACs/batch
+
+[INFO] Success to execute the command

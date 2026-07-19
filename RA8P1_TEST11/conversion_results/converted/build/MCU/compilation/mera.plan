@@ -1,0 +1,75 @@
+{
+  "execution": {
+    "stages": [
+      [
+        [
+          [
+            {
+              "backend": "mera_c99_source_ethos_u55",
+              "binaries_location": "sub_0000__ARM_ETHOS_U55_C_CODEGEN",
+              "name": "sub_0000"
+            },
+            {
+              "input_buffers": {
+                "serving_default_input_0": 0
+              },
+              "input_order": [
+                "serving_default_input_0"
+              ],
+              "output_buffers": {
+                "StatefulPartitionedCall_1_0_70031": 1
+              },
+              "output_order": [
+                "StatefulPartitionedCall_1_0_70031"
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "memory": {
+    "buffers": [
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 49152,
+        "data_type": "uint8",
+        "name": "serving_default_input_0",
+        "offset": 0,
+        "shape": [
+          1,
+          128,
+          128,
+          3
+        ],
+        "size": 49152
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 5,
+        "data_type": "uint8",
+        "name": "StatefulPartitionedCall_1_0_70031",
+        "offset": 0,
+        "shape": [
+          1,
+          5
+        ],
+        "size": 5
+      }
+    ],
+    "input_buffers": [
+      [
+        "serving_default_input_0",
+        0
+      ]
+    ],
+    "output_buffers": [
+      [
+        "StatefulPartitionedCall_1_0_70031",
+        1
+      ]
+    ]
+  }
+}

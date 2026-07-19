@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    [
+      "serving_default_input_0",
+      [
+        "1",
+        "128",
+        "128",
+        "3"
+      ],
+      "UInt8"
+    ]
+  ],
+  "outputs": [
+    [
+      "StatefulPartitionedCall_1_0_70031",
+      [
+        "1",
+        "5"
+      ],
+      "UInt8"
+    ]
+  ]
+}

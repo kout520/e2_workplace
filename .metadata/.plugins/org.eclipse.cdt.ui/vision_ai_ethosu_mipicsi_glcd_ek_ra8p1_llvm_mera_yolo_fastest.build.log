@@ -1,0 +1,19 @@
+18:20:32 **** 项目vision_ai_ethosu_mipicsi_glcd_ek_ra8p1_llvm_mera_yolo_fastest配置Debug的增量构建 ****
+make -r --output-sync -j24 all 
+c:/renesas/ra/e2studio_v2025-12_fsp_v6.4.0/eclipse/plugins/com.renesas.ide.exttools.busybox.win32.x86_64_1.3.6.v20230615-0931/bin//sh: clang: not found
+Building file: ../src/time_counter/time_counter.c
+make: *** [src/time_counter/subdir.mk:26: src/time_counter/time_counter.o] Error 127
+Building file: ../src/fsp_custom/r_mipi_phy/r_mipi_phy.c
+make: *** Waiting for unfinished jobs....
+c:/renesas/ra/e2studio_v2025-12_fsp_v6.4.0/eclipse/plugins/com.renesas.ide.exttools.busybox.win32.x86_64_1.3.6.v20230615-0931/bin//sh: clang: not found
+make: *** [src/fsp_custom/r_mipi_phy/subdir.mk:26: src/fsp_custom/r_mipi_phy/r_mipi_phy.o] Error 127
+c:/renesas/ra/e2studio_v2025-12_fsp_v6.4.0/eclipse/plugins/com.renesas.ide.exttools.busybox.win32.x86_64_1.3.6.v20230615-0931/bin//sh: clang: not found
+make: *** [src/fsp_custom/subdir.mk:26: src/fsp_custom/mipicsi_vin_hal_driver.o] Error 127
+Building file: ../src/fsp_custom/mipicsi_vin_hal_driver.c
+c:/renesas/ra/e2studio_v2025-12_fsp_v6.4.0/eclipse/plugins/com.renesas.ide.exttools.busybox.win32.x86_64_1.3.6.v20230615-0931/bin//sh: clang: not found
+make: *** [src/external_memory/subdir.mk:29: src/external_memory/ospi_b_commands.o] Error 127
+Building file: ../src/external_memory/ospi_b_commands.c
+"make -r --output-sync -j24 all"以退出代码2结尾。构建可能不完整。
+
+18:20:32 Build Failed. 9 errors, 0 warnings. (took 570ms)
+

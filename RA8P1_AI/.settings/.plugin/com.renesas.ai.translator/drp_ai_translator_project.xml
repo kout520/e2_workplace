@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DrpAiTranslatorProjectSettings>
+    <ProjectSettingsInfo>
+        <name>RA8P1_AI</name>
+        <framework>2</framework>
+        <modelfile>best-int8.tflite</modelfile>
+        <output_directory>conversion_results</output_directory>
+        <docker_image_name>Unused property</docker_image_name>
+        <PytorchSettingInfo>
+            <configuration_type>false</configuration_type>
+            <configuration_file/>
+            <modelname/>
+            <model_weight/>
+            <input_layer_shape/>
+        </PytorchSettingInfo>
+    </ProjectSettingsInfo>
+    <DRP-AI_TVMSettingInfo>
+        <TransSettingInfo>
+            <item key="yolo_fastest_632_model_float16.tflite">conversion_results1/conversion_tool_settings/yolo_fastest_632_model_float16.tflite_trans_config.json</item>
+            <item key="D:\ai_train\models\yolo_fastest_ruhmi_final.tflite">conversion_results1/conversion_tool_settings/yolo_fastest_ruhmi_final.tflite_trans_config.json</item>
+            <item key="best-int8.tflite">conversion_results/conversion_tool_settings/best-int8.tflite_trans_config.json</item>
+            <item key="D:\ai_train\models\yolo_fastest_632_model_float32.tflite">conversion_results/conversion_tool_settings/yolo_fastest_632_model_float32.tflite_trans_config.json</item>
+        </TransSettingInfo>
+        <QuantizationSetting>
+            <item key="yolo_fastest_632_model_float16.tflite">conversion_results1/conversion_tool_settings/yolo_fastest_632_model_float16.tflite_quant_config.json</item>
+            <item key="D:\ai_train\models\yolo_fastest_ruhmi_final.tflite">conversion_results1/conversion_tool_settings/yolo_fastest_ruhmi_final.tflite_quant_config.json</item>
+            <item key="best-int8.tflite">conversion_results/conversion_tool_settings/best-int8.tflite_quant_config.json</item>
+            <item key="D:\ai_train\models\yolo_fastest_632_model_float32.tflite">conversion_results/conversion_tool_settings/yolo_fastest_632_model_float32.tflite_quant_config.json</item>
+        </QuantizationSetting>
+    </DRP-AI_TVMSettingInfo>
+</DrpAiTranslatorProjectSettings>

@@ -1,0 +1,1701 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "HomeScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 320,
+            "Height": 239,
+            "RelativeFilename": "bg_1.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 242,
+            "Y": 174,
+            "Width": 78,
+            "Height": 30,
+            "TextId": "__SingleUse_606S",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 28,
+              "Blue": 78
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 242,
+            "Y": 204,
+            "Width": 78,
+            "Height": 30,
+            "TextId": "__SingleUse_OJCP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 28,
+              "Blue": 78
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_002",
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconX": -1,
+            "IconY": 1,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_001",
+            "X": 36,
+            "Y": 203,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconX": 2,
+            "IconY": 2,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea_zh",
+            "Width": 156,
+            "Height": 30,
+            "TextId": "__SingleUse_6S6C",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 23,
+              "Green": 13,
+              "Blue": 13
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 216,
+            "Y": 137,
+            "Width": 104,
+            "Height": 30,
+            "TextId": "__SingleUse_KOM8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 28,
+              "Blue": 78
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_src1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_002"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "timer"
+            }
+          },
+          {
+            "InteractionName": "Interaction_src2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_001"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "main_page"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "main_page",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 319,
+            "Height": 240,
+            "RelativeFilename": "bg_3.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton_1",
+            "X": 208,
+            "Y": 8,
+            "Width": 62,
+            "Height": 34,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_off_dark.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_on_action.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton_2",
+            "X": 207,
+            "Y": 66,
+            "Width": 62,
+            "Height": 34,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_off_dark.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_on_action.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton_3",
+            "X": 207,
+            "Y": 128,
+            "Width": 62,
+            "Height": 34,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_off_dark.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_on_action.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton_4",
+            "X": 208,
+            "Y": 190,
+            "Width": 62,
+            "Height": 34,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_off_dark.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_on_action.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 270,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "Container\\backlight_on-50x50.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 269,
+            "Y": 58,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "Container\\beep_50x50.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 270,
+            "Y": 120,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "Container\\dc_fan_50x50.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 270,
+            "Y": 182,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "Container\\vibrate_50x50.png"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_02",
+            "X": 36,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconX": 2,
+            "IconY": 1,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_01",
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconX": -1,
+            "IconY": 1,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_03",
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_pressed.png",
+            "TextId": "__SingleUse_WYQN",
+            "ReleasedColor": {
+              "Red": 152,
+              "Green": 12,
+              "Blue": 171
+            },
+            "PressedColor": {
+              "Red": 15,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_scr01",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_01"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr02",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_02"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "timer"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr03",
+            "Trigger": {
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr04",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "led_task"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr05",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "beef_task"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr06",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton_3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "fan_task"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr07",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton_4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "zhendong_task"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr08",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_03"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "timer",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 319,
+            "Height": 240,
+            "LockPosition": true,
+            "RelativeFilename": "bg_4.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_111",
+            "X": 3,
+            "Width": 103,
+            "Height": 47,
+            "TextId": "__SingleUse_7AAO",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_R2RB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_222",
+            "X": 105,
+            "Width": 99,
+            "Height": 47,
+            "TextId": "__SingleUse_21OX",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_Q2XY",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_H4U2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_333",
+            "X": 90,
+            "Y": 47,
+            "Width": 129,
+            "Height": 47,
+            "TextId": "__SingleUse_4TBP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 64,
+              "Green": 222,
+              "Blue": 188
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_MRQL",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_LA8Q",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_444",
+            "X": 219,
+            "Y": 47,
+            "Width": 76,
+            "Height": 47,
+            "TextId": "__SingleUse_BCGQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 230,
+              "Green": 18,
+              "Blue": 18
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_HV6J",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_555",
+            "X": 204,
+            "Y": 204,
+            "Width": 69,
+            "Height": 25,
+            "TextId": "__SingleUse_EJF7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 15,
+              "Green": 6,
+              "Blue": 6
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_F5R7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_0001",
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_ios_35_35_E8F6FB.svg.png",
+            "IconX": -1,
+            "IconY": 1,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_0002",
+            "X": 36,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_forward_ios_35_35_E8F6FB.svg.png",
+            "IconX": 1,
+            "IconY": 1,
+            "IconHeight": 35,
+            "IconWidth": 35,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_action.json"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "animatedImage2",
+            "X": 273,
+            "Y": 180,
+            "Width": 47,
+            "Height": 60,
+            "FileNameFirst": "SportPage\\BigWhite1.png",
+            "FileNameLast": "SportPage\\BigWhite3.png",
+            "UpdateTicksInterval": 100,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_scr001",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_0001"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "main_page"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr002",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_0002"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "coutton",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_4",
+            "Y": 184,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_UTMK",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_1",
+            "Y": 16,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_K5ON",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_2",
+            "Y": 70,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_WYO0",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_3",
+            "Y": 126,
+            "Width": 240,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_round_inactive.png",
+            "TextId": "__SingleUse_6ZAA",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_5",
+            "X": 210,
+            "Y": 190,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_T2IE",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_6",
+            "X": 110,
+            "Y": 16,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_TZGX",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel_7",
+            "X": 110,
+            "Y": 70,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_2P1J",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 240,
+            "Width": 80,
+            "Height": 19,
+            "TextId": "__SingleUse_O2QO",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_scr00001",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "WIFI"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00002",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "heat"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00003",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_3"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "are"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00004",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_4"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "VCC"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00005",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_5"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "main_page"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00006",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_6"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "oula"
+            }
+          },
+          {
+            "InteractionName": "Interaction_scr00007",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_7"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ADC"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "VCC",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 51,
+              "Green": 39,
+              "Blue": 112
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "Container\\Chip.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_220",
+            "X": 127,
+            "Y": 104,
+            "Width": 87,
+            "Height": 25,
+            "TextId": "__SingleUse_4ZCZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LLB5",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_110",
+            "X": 127,
+            "Y": 135,
+            "Width": 97,
+            "Height": 25,
+            "TextId": "__SingleUse_LPCB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_HTM6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_330",
+            "X": 127,
+            "Y": 165,
+            "Width": 89,
+            "Height": 25,
+            "TextId": "__SingleUse_Q1E7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RISZ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_vcc1",
+            "X": 210,
+            "Y": 190,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_171L",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_vcc1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_vcc1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "heat",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 20,
+            "Width": 320,
+            "Height": 200,
+            "RelativeFilename": "bg_16.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 167,
+            "Y": 20,
+            "Width": 51,
+            "Height": 47,
+            "RelativeFilename": "Container\\HeartRate_start_51x47.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_11",
+            "X": 210,
+            "Y": 170,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_HY83",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_12",
+            "Y": 170,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_1WZ6",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_222",
+            "X": 223,
+            "Y": 20,
+            "Width": 93,
+            "Height": 47,
+            "TextId": "__SingleUse_YO4M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_Q3ND",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_333",
+            "X": 219,
+            "Y": 70,
+            "Width": 93,
+            "Height": 47,
+            "TextId": "__SingleUse_UOYP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_EMWO",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_444",
+            "X": 218,
+            "Y": 123,
+            "Width": 85,
+            "Height": 47,
+            "TextId": "__SingleUse_LEVS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_P8AC",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 167,
+            "Y": 120,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_32.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 168,
+            "Y": 67,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_31.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 20,
+            "Width": 128,
+            "Height": 19,
+            "TextId": "__SingleUse_0FDB",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 290,
+            "Y": 133,
+            "Width": 26,
+            "Height": 47,
+            "TextId": "__SingleUse_V7AI",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_heat1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_11"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          },
+          {
+            "InteractionName": "Interaction_heat2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_12"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "sp02_task"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "are",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 48,
+            "Width": 320,
+            "Height": 192,
+            "RelativeFilename": "bg_6.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 176,
+            "Height": 240,
+            "Color": {
+              "Red": 55,
+              "Green": 212,
+              "Blue": 139
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 176,
+            "Width": 144,
+            "Height": 48,
+            "Color": {
+              "Red": 117,
+              "Green": 230,
+              "Blue": 215
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_600",
+            "X": 71,
+            "Y": 203,
+            "Width": 76,
+            "Height": 25,
+            "TextId": "__SingleUse_L6P2",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_J74L",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_500",
+            "X": 71,
+            "Y": 153,
+            "Width": 76,
+            "Height": 25,
+            "TextId": "__SingleUse_FC0B",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RWTU",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_400",
+            "X": 71,
+            "Y": 113,
+            "Width": 76,
+            "Height": 25,
+            "TextId": "__SingleUse_VKD1",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_R353",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_300",
+            "X": 176,
+            "Y": 12,
+            "Width": 192,
+            "Height": 25,
+            "TextId": "__SingleUse_SOWQ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_8KRY",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_200",
+            "X": 71,
+            "Y": 11,
+            "Width": 87,
+            "Height": 25,
+            "TextId": "__SingleUse_7R8P",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OGGD",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_100",
+            "X": 71,
+            "Y": 63,
+            "Width": 105,
+            "Height": 25,
+            "TextId": "__SingleUse_4MNL",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_T6Q6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_10",
+            "X": 210,
+            "Y": 190,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_D578",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 140,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_9.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "Y": 50,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 1,
+            "Y": 190,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_10.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 2,
+            "Y": 100,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_11.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image6",
+            "X": 3,
+            "Y": -2,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "bg_8.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_are1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_10"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "WIFI",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 108,
+            "Y": 106,
+            "Width": 104,
+            "Height": 30,
+            "TextId": "__SingleUse_FEQJ",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_wifi1",
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "oula",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 20,
+            "Width": 320,
+            "Height": 200,
+            "RelativeFilename": "bg_18.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_oula1",
+            "X": 210,
+            "Y": 170,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_38VO",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_oula2",
+            "Y": 20,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_HZZ1",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_oula3",
+            "Y": 70,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_WHQI",
+            "PressedColor": {
+              "Red": 245,
+              "Green": 240,
+              "Blue": 240
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_oula4",
+            "Y": 123,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_X1KD",
+            "PressedColor": {
+              "Red": 250,
+              "Green": 242,
+              "Blue": 242
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_o2",
+            "X": 110,
+            "Y": 20,
+            "Width": 170,
+            "Height": 47,
+            "TextId": "__SingleUse_NXDZ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_TNEH",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_o1",
+            "X": 110,
+            "Y": 70,
+            "Width": 161,
+            "Height": 47,
+            "TextId": "__SingleUse_MTFL",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_KDKQ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_o3",
+            "X": 110,
+            "Y": 123,
+            "Width": 161,
+            "Height": 47,
+            "TextId": "__SingleUse_DWUW",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_EYYE",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_oula1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ADC",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 20,
+            "Width": 320,
+            "Height": 200,
+            "RelativeFilename": "bg_17.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_oula1",
+            "X": 210,
+            "Y": 170,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_inactive.png",
+            "TextId": "__SingleUse_A41L",
+            "ReleasedColor": {
+              "Red": 196,
+              "Green": 26,
+              "Blue": 201
+            },
+            "PressedColor": {
+              "Red": 18,
+              "Green": 3,
+              "Blue": 3
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_inactive.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "Y": 31,
+            "Width": 130,
+            "Height": 30,
+            "TextId": "__SingleUse_IPOE",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 71,
+            "Width": 130,
+            "Height": 30,
+            "TextId": "__SingleUse_VKLK",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_ADC1",
+            "X": 130,
+            "Y": 31,
+            "Width": 109,
+            "Height": 25,
+            "TextId": "__SingleUse_NZM8",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_3G9G",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_ADC2",
+            "X": 130,
+            "Y": 70,
+            "Width": 89,
+            "Height": 25,
+            "TextId": "__SingleUse_JWUQ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_MUYB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_oula1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "coutton"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "HomeScreen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Toolchain": "MDK-ARM V5.32",
+    "Platform": "m33",
+    "ProjectFile": "../FS-STM32U575-Total.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.21.2"
+}

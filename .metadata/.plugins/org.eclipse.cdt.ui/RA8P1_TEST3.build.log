@@ -1,0 +1,8 @@
+20:34:10 **** 项目RA8P1_TEST3配置Debug的增量构建 ****
+make -r -j24 all 
+arm-none-eabi-size --format=berkeley "RA8P1_TEST3.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 396060	    492	  64366	 460918	  70876	RA8P1_TEST3.elf
+
+20:34:10 Build Finished. 0 errors, 0 warnings. (took 294ms)
+

@@ -1,0 +1,933 @@
+{
+  "subgraphs": [
+    {
+      "nodes": [
+        {
+          "attributes": {},
+          "input_names": {
+            "in_0": {
+              "dt": "UInt8",
+              "layout": "HW",
+              "name": "StatefulPartitionedCall_1_0_70031",
+              "shape": [
+                1,
+                5
+              ]
+            }
+          },
+          "op_name": "OutputNode",
+          "output": {
+            "dt": "UInt8",
+            "layout": "x",
+            "name": "GraphOutputs",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70000",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70001",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70002",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70003",
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70005",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70007",
+            "shape": [
+              96
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70009",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70011",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70013",
+            "shape": [
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "Int8VecConstant_70004",
+            "shape": [
+              5,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "Int8VecConstant_70006",
+            "shape": [
+              64,
+              6144
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70008",
+            "shape": [
+              96,
+              3,
+              3,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70010",
+            "shape": [
+              64,
+              3,
+              3,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70012",
+            "shape": [
+              32,
+              3,
+              3,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70014",
+            "shape": [
+              16,
+              3,
+              3,
+              3
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "functional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029",
+              "shape": [
+                1,
+                5
+              ]
+            }
+          },
+          "op_name": "TFLiteSigmoid",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "StatefulPartitionedCall_1_01_70030",
+            "shape": [
+              1,
+              5
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "StatefulPartitionedCall_1_01_70030",
+              "shape": [
+                1,
+                5
+              ]
+            }
+          },
+          "op_name": "TFLiteQuantize",
+          "output": {
+            "dt": "UInt8",
+            "layout": "HW",
+            "name": "StatefulPartitionedCall_1_0_70031",
+            "shape": [
+              1,
+              5
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "asymmetric_quantize_inputs": "0",
+            "fused_activation": "RELU",
+            "keep_num_dims": "0",
+            "quantized_bias_type": "dtype(Float32)"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70005",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "functional_1_flatten_1_Reshape_70027",
+              "shape": [
+                1,
+                6144
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "Int8VecConstant_70006",
+              "shape": [
+                64,
+                6144
+              ]
+            }
+          },
+          "op_name": "TFLiteFullyConnectedBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "functional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028",
+            "shape": [
+              1,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "data": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_pool4_1_MaxPool2d_70023",
+              "shape": [
+                1,
+                8,
+                8,
+                96
+              ]
+            },
+            "shape": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "functional_1_flatten_1_Reshape_shape_70026",
+              "shape": [
+                2
+              ]
+            }
+          },
+          "op_name": "CanReshape",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "functional_1_flatten_1_Reshape_70027",
+            "shape": [
+              1,
+              6144
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "axis": "0"
+          },
+          "input_names": {
+            "in_0": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "functional_1_flatten_1_strided_slice_70025",
+              "shape": [
+                1
+              ]
+            },
+            "in_1": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70002",
+              "shape": [
+                1
+              ]
+            }
+          },
+          "op_name": "TFLitePack",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "functional_1_flatten_1_Reshape_shape_70026",
+            "shape": [
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_pool4_1_MaxPool2d_70023",
+              "shape": [
+                1,
+                8,
+                8,
+                96
+              ]
+            }
+          },
+          "op_name": "TFLiteShape",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "functional_1_flatten_1_Shape_70024",
+            "shape": [
+              4
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "begin_mask": "0",
+            "ellipsis_mask": "0",
+            "end_mask": "0",
+            "new_axis_mask": "0",
+            "shrink_axis_mask": "1"
+          },
+          "input_names": {
+            "begin": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70000",
+              "shape": [
+                1
+              ]
+            },
+            "end": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70001",
+              "shape": [
+                1
+              ]
+            },
+            "input": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "functional_1_flatten_1_Shape_70024",
+              "shape": [
+                4
+              ]
+            },
+            "strides": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70001",
+              "shape": [
+                1
+              ]
+            }
+          },
+          "op_name": "TFLiteStridedSlice",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "functional_1_flatten_1_strided_slice_70025",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "asymmetric_quantize_inputs": "0",
+            "fused_activation": "NONE",
+            "keep_num_dims": "0",
+            "quantized_bias_type": "dtype(Float32)"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70003",
+              "shape": [
+                5
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "functional_1_fc1_1_MatMul_functional_1_relu_fc_1_Relu_functional_1_fc1_1_BiasAdd_70028",
+              "shape": [
+                1,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "Int8VecConstant_70004",
+              "shape": [
+                5,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteFullyConnectedBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "functional_1_output_1_MatMul_functional_1_output_1_BiasAdd_70029",
+            "shape": [
+              1,
+              5
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016",
+              "shape": [
+                1,
+                128,
+                128,
+                16
+              ]
+            }
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_pool1_1_MaxPool2d_70017",
+            "shape": [
+              1,
+              64,
+              64,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018",
+              "shape": [
+                1,
+                64,
+                64,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_pool2_1_MaxPool2d_70019",
+            "shape": [
+              1,
+              32,
+              32,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020",
+              "shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_pool3_1_MaxPool2d_70021",
+            "shape": [
+              1,
+              16,
+              16,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "fused_activation": "NONE",
+            "kernel_h": "2",
+            "kernel_w": "2",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022",
+              "shape": [
+                1,
+                16,
+                16,
+                96
+              ]
+            }
+          },
+          "op_name": "TFLiteMaxPool",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_pool4_1_MaxPool2d_70023",
+            "shape": [
+              1,
+              8,
+              8,
+              96
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70013",
+              "shape": [
+                16
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "tfl_quantize_70015",
+              "shape": [
+                1,
+                128,
+                128,
+                3
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70014",
+              "shape": [
+                16,
+                3,
+                3,
+                3
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_relu1_1_Relu_functional_1_conv1_1_BiasAdd_functional_1_conv1_1_convolution_functional_1_conv1_1_Squeeze1_70016",
+            "shape": [
+              1,
+              128,
+              128,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70011",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_pool1_1_MaxPool2d_70017",
+              "shape": [
+                1,
+                64,
+                64,
+                16
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70012",
+              "shape": [
+                32,
+                3,
+                3,
+                16
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_relu2_1_Relu_functional_1_conv2_1_BiasAdd_functional_1_conv2_1_convolution_functional_1_conv2_1_Squeeze1_70018",
+            "shape": [
+              1,
+              64,
+              64,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70009",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_pool2_1_MaxPool2d_70019",
+              "shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70010",
+              "shape": [
+                64,
+                3,
+                3,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_relu3_1_Relu_functional_1_conv3_1_BiasAdd_functional_1_conv3_1_convolution_functional_1_conv3_1_Squeeze1_70020",
+            "shape": [
+              1,
+              32,
+              32,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70007",
+              "shape": [
+                96
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "functional_1_pool3_1_MaxPool2d_70021",
+              "shape": [
+                1,
+                16,
+                16,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70008",
+              "shape": [
+                96,
+                3,
+                3,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "functional_1_relu4_1_Relu_functional_1_conv4_1_BiasAdd_functional_1_conv4_1_convolution_functional_1_conv4_1_Squeeze1_70022",
+            "shape": [
+              1,
+              16,
+              16,
+              96
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Var",
+          "output": {
+            "dt": "UInt8",
+            "layout": "NHWC",
+            "name": "serving_default_input_0",
+            "shape": [
+              1,
+              128,
+              128,
+              3
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "UInt8",
+              "layout": "NHWC",
+              "name": "serving_default_input_0",
+              "shape": [
+                1,
+                128,
+                128,
+                3
+              ]
+            }
+          },
+          "op_name": "TFLiteQuantize",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "tfl_quantize_70015",
+            "shape": [
+              1,
+              128,
+              128,
+              3
+            ]
+          }
+        }
+      ],
+      "subgraph_name": "sub_0",
+      "target_name": "UNDEFINED"
+    }
+  ]
+}

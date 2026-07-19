@@ -1,0 +1,21 @@
+2026-05-13 21:27:01,949 [INFO] (check_requirements.py #28, load_requirements): 📥 Downloading requirements from https://Tool-support.renesas.com/tool-support/Zoo/MCT/requirements.txt
+2026-05-13 21:27:01,951 [DEBUG] (connectionpool.py #1062, _new_conn): Starting new HTTPS connection (1): tool-support.renesas.com:443
+2026-05-13 21:27:02,685 [DEBUG] (connectionpool.py #544, _make_request): https://tool-support.renesas.com:443 "GET /tool-support/Zoo/MCT/requirements.txt HTTP/1.1" 200 None
+2026-05-13 21:27:02,691 [INFO] (check_requirements.py #58, check_requirements): mera: VERSION MISMATCH (installed 2.5.0+pkg.3577, required 2.6.0+pkg.4513)
+2026-05-13 21:27:02,691 [INFO] (check_requirements.py #19, install_package): ➡️ Installing: https://github.com/renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+Collecting mera==2.6.0+pkg.4513
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))': /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+
+
+[notice] A new release of pip is available: 23.0.1 -> 26.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+2026-05-13 21:27:11,018 [ERROR] (check_requirements.py #24, install_package): ❌ Failed to install https://github.com/renesas/ruhmi-framework-mcu/raw/refs/tags/Release-2026-04-27/install/mera-2.6.0+pkg.4513-cp310-cp310-win_amd64.whl
+2026-05-13 21:27:11,019 [INFO] (check_requirements.py #75, check_requirements): onnx==1.17.0: OK
+2026-05-13 21:27:11,021 [INFO] (check_requirements.py #75, check_requirements): tflite==2.18.0: OK
+[INFO] Success to execute the command
+Exit code: 1
